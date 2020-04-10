@@ -91,4 +91,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+		<module>ks-common</module>
+	</modules>
 </project>
