@@ -19,8 +19,8 @@ public class KsResp<T> {
 		return new KsResp<T>(code, msg, null);
 	}
 
-	public static <T> KsResp<T> success(Integer code, T data) {
-		return new KsResp<T>(code, null, data);
+	public static <T> KsResp<T> success(T data) {
+		return new KsResp<T>(200, null, data);
 	}
 
 }
