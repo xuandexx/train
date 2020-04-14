@@ -1,0 +1,14 @@
+#配置数据源的属性
+spring:
+    #thymeleaf的配置
+    thymeleaf:
+        cache: false
+        prefix: classpath:/templates/
+        enabled: true
+    #        enabled: true
+    #        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+    messages:
+        basename: i18n.login

@@ -14,6 +14,7 @@
 	<modules>
 		<module>train-user-center</module>
 		<module>train-app-front</module>
+		<module>train-domain</module>
 	</modules>
 
 	<!--统一管理jar包版本 -->
