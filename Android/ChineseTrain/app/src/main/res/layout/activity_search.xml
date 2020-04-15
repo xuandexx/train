@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@color/colorBackground"
-    tools:context="scut.carson_ho.search_layout.MainActivity">
+    android:background="@color/colorBackground">
 
-    <scut.carson_ho.searchview.SearchView
+    <com.xuandexx.android.chinesetrain.view.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

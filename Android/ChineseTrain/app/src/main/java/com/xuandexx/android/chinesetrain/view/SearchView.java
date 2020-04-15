@@ -20,6 +20,8 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.xuandexx.android.chinesetrain.R;
+
 /**
  * Created by Carson_Ho on 17/8/10.
  */
@@ -44,12 +46,12 @@ public class SearchView extends LinearLayout {
 
     // 数据库变量
     // 用于存放历史搜索记录
-    private RecordSQLiteOpenHelper helper ;
+    private RecordSQLiteOpenHelper helper;
     private SQLiteDatabase db;
 
     // 回调接口
-    private  ICallBack mCallBack;// 搜索按键回调接口
-    private  bCallBack bCallBack; // 返回按键回调接口
+    private ICallBack mCallBack;// 搜索按键回调接口
+    private bCallBack bCallBack; // 返回按键回调接口
 
     // 自定义属性设置
     // 1. 搜索字体属性设置：大小、颜色 & 默认提示
@@ -120,7 +122,7 @@ public class SearchView extends LinearLayout {
      * 关注b
      * 作用：初始化搜索框
      */
-    private void init(){
+    private void init() {
 
         // 1. 初始化UI组件->>关注c
         initView();
@@ -155,7 +157,7 @@ public class SearchView extends LinearLayout {
 
                     // 1. 点击搜索按键后，根据输入的搜索字段进行查询
                     // 注：由于此处需求会根据自身情况不同而不同，所以具体逻辑由开发者自己实现，此处仅留出接口
-                    if (!(mCallBack == null)){
+                    if (!(mCallBack == null)) {
                         mCallBack.SearchAciton(et_search.getText().toString());
                     }
                     Toast.makeText(context, "需要搜索的是" + et_search.getText(), Toast.LENGTH_SHORT).show();
@@ -222,7 +224,7 @@ public class SearchView extends LinearLayout {
             @Override
             public void onClick(View v) {
                 // 注：由于返回需求会根据自身情况不同而不同，所以具体逻辑由开发者自己实现，此处仅留出接口
-                if (!(bCallBack == null)){
+                if (!(bCallBack == null)) {
                     bCallBack.BackAciton();
                 }
 
@@ -237,10 +239,10 @@ public class SearchView extends LinearLayout {
     /**
      * 关注c：绑定搜索框xml视图
      */
-    private void initView(){
+    private void initView() {
 
         // 1. 绑定R.layout.search_layout作为搜索框的xml文件
-        LayoutInflater.from(context).inflate(R.layout.search_layout,this);
+        LayoutInflater.from(context).inflate(R.layout.search_layout, this);
 
         // 2. 绑定搜索框EditText
         et_search = (EditText) findViewById(R.id.et_search);
@@ -249,7 +251,7 @@ public class SearchView extends LinearLayout {
         et_search.setHint(textHintSearch);
 
         // 3. 搜索框背景颜色
-        search_block = (LinearLayout)findViewById(R.id.search_block);
+        search_block = (LinearLayout) findViewById(R.id.search_block);
         LayoutParams params = (LayoutParams) search_block.getLayoutParams();
         params.height = searchBlockHeight;
         search_block.setBackgroundColor(searchBlockColor);
@@ -277,20 +279,20 @@ public class SearchView extends LinearLayout {
         Cursor cursor = helper.getReadableDatabase().rawQuery(
                 "select id as _id,name from records where name like '%" + tempName + "%' order by id desc ", null);
         // 2. 创建adapter适配器对象 & 装入模糊搜索的结果
-        adapter = new SimpleCursorAdapter(context, android.R.layout.simple_list_item_1, cursor, new String[] { "name" },
-                new int[] { android.R.id.text1 }, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+        adapter = new SimpleCursorAdapter(context, android.R.layout.simple_list_item_1, cursor, new String[]{"name"},
+                new int[]{android.R.id.text1}, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
         // 3. 设置适配器
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
         System.out.println(cursor.getCount());
         // 当输入框为空 & 数据库中有搜索记录时，显示 "删除搜索记录"按钮
-        if (tempName.equals("") && cursor.getCount() != 0){
+        if (tempName.equals("") && cursor.getCount() != 0) {
             tv_clear.setVisibility(VISIBLE);
-        }
-        else {
+        } else {
             tv_clear.setVisibility(INVISIBLE);
-        };
+        }
+        ;
 
     }
 
@@ -330,7 +332,7 @@ public class SearchView extends LinearLayout {
     /**
      * 点击键盘中搜索键后的操作，用于接口回调
      */
-    public void setOnClickSearch(ICallBack mCallBack){
+    public void setOnClickSearch(ICallBack mCallBack) {
         this.mCallBack = mCallBack;
 
     }
@@ -338,7 +340,7 @@ public class SearchView extends LinearLayout {
     /**
      * 点击返回后的操作，用于接口回调
      */
-    public void setOnClickBack(bCallBack bCallBack){
+    public void setOnClickBack(bCallBack bCallBack) {
         this.bCallBack = bCallBack;
 
     }
