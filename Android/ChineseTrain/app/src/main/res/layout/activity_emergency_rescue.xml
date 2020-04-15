@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EmergencyRescueActivity" >
+
+    <include layout="@layout/view_top" />
+
+    <LinearLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        tools:ignore="UnknownIdInLayout" >
+
+        <RelativeLayout
+            android:id="@+id/er_rl_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wanttorescue_numbertitle"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="@string/wanttorescue_number"
+                android:textColor="#bcd72e"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:src="@drawable/e5_1_011_1"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <include layout="@layout/ieauto_autogroup_horizontal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/RelativeLayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/wanttorescue_title_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/illegalhandl_select" />
+
+            <CheckBox
+                android:id="@+id/er_cb"
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/cb"
+                android:button="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/RelativeLayout3"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/wanttorescue_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wanttorescue_button2"
+        android:layout_below="@+id/RelativeLayout3"
+        android:layout_marginTop="5dp"
+        android:divider="@color/gray"
+        android:dividerHeight="1px" >
+    </ListView>
+
+    <Button
+        android:id="@+id/wanttorescue_button2"
+        style="@style/tv_content_17_white"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_ok"
+        android:text="@string/comment_perfection" />
+
+</RelativeLayout>

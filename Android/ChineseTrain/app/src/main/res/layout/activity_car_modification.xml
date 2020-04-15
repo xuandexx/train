@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/view_viewpager_top" /> 
+
+
+   <!--  <LinearLayout
+        android:id="@+id/illegalhandl_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ih_ll_addrees"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/ih_mr_addrees"
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/_In_mrdoedkoe"
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(切换城市)" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择排序方式"
+                />
+        </LinearLayout>
+    </LinearLayout>--> 
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/carabouttabhost_decoratingmodification_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <TextView
+        style="@style/tv_title_21_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/resgister_prompt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_preference_first_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/resgister_accountnumber"
+            tools:ignore="SpUsage" />
+
+        <cn.ieauto.autogroup.android.widget.MyEditText
+            android:id="@+id/resgister_ed_userphone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_but"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_preference_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/resgister_setpassword"
+            tools:ignore="SpUsage" />
+
+        <cn.ieauto.autogroup.android.widget.MyEditText
+            android:id="@+id/resgister_ed_setpassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_but"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_preference_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/resgister_passwordconfirmation"
+            tools:ignore="SpUsage" />
+
+        <cn.ieauto.autogroup.android.widget.MyEditText
+            android:id="@+id/resgister_ed_pwdconfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_but"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_preference_last_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/resgister_verificationcode"
+            tools:ignore="SpUsage" />
+
+        <cn.ieauto.autogroup.android.widget.MyEditText
+            android:id="@+id/resgister_ed_verificationcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_but"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+
+        <Button
+            android:id="@+id/resgister_tv_confirmpwd"
+            style="@style/tv_content_14_white"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_ok"
+            android:gravity="center"
+            android:text="@string/resgister_clickfor" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resgister_button"
+        style="@style/tv_content_17_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_ok"
+        android:gravity="center"
+        android:text="@string/resgister_perfection_perfection" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/tv_content_17_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n1.siojfeijrojfeoijieofeoijifeif\n\n2.sdkofokpekf;ldskcmdd\n\n3.idsksld;;;;sdkpowekdpewkfde\n\n4.addddddddddddddddddddsdfdssdsd\n\n5.detopppppppppppppppppppppppppppppppppppp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/statement_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cb"
+            android:button="@null" />
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="请同意" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/statement_btnq"
+            style="@style/tv_content_17_black"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+         <Button
+             android:id="@+id/statement_btnn"
+            style="@style/tv_content_17_black"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="取消" />
+    </RelativeLayout>
+
+</LinearLayout>

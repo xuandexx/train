@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/er_img_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bikers" />
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/er_cb"
+            android:layout_toRightOf="@+id/er_img_icon" >
+
+            <TextView
+                android:id="@+id/er_tv_name_shop"
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:singleLine="true"
+                android:text="超高的" />
+
+            <TextView
+                android:id="@+id/er_tv_distance"
+                style="@style/tv_content_17_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/er_tv_name_shop"
+                android:text="300米" />
+
+            <TextView
+                android:id="@+id/er_tv_map"
+                style="@style/tv_content_14_gar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="查看地图" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/er_cb"
+            android:layout_toRightOf="@+id/er_img_icon"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/er_tv_address"
+                style="@style/tv_content_14_gar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="上海市闵行区6666" />
+
+            <TextView
+                android:id="@+id/er_tv_priece"
+                style="@style/tv_content_14_gar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/er_tv_address"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:text="价格：30元" />
+
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/er_img_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/e5_1_011_1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/er_tv_distance"
+                    style="@style/tv_content_14_cl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离300米"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/er_img_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/score"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/er_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cb"
+            android:button="@null"
+            android:src="@drawable/bikers" />
+    </RelativeLayout>
+
+</RelativeLayout>

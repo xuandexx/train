@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <Button
+        android:id="@+id/secrecy_but_friendspermissions"
+        style="@style/tv_content_17_black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/AddFriendPermissions"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/secrecy_but_blacklist"
+        style="@style/tv_content_17_black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/Blacklist_1" />
+
+    <Button
+        android:id="@+id/secrecy_but_carcirclepermissions"
+        style="@style/tv_content_17_black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/Carcirclepermissions"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/secrecy_but_changepassword"
+        style="@style/tv_content_17_black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/ChangePassword" />
+
+</LinearLayout>

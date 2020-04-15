@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <RelativeLayout
+        android:id="@+id/mysettings_myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/f7_1_074_1"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center"
+            android:text="@string/mysettings_1" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/ieauto_autogroup_horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/mysettings_newmessagenotice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/f7_1_074_2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/message_notice" />
+    </LinearLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/mysettings_secrecy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/f7_1_074_3"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center"
+            android:text="@string/mysettings_3" />
+    </RelativeLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/mysettings_respecting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/f7_1_074_6"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView6"
+            android:gravity="center"
+            android:text="@string/mysettings_6" >
+        </TextView>
+    </RelativeLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/mysettings_abort"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/f7_1_074_7"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView7"
+            android:gravity="center"
+            android:text="@string/button_logout" />
+    </RelativeLayout>
+
+</LinearLayout>

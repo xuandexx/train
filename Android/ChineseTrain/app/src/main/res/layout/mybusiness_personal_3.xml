@@ -1,0 +1,384 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_3_1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_3_2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_3_3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_3_4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/buy_details_8"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView7"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_10"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_8"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView9"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView10"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_3_5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/mybusiness_peraonal_3_spinner10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView11"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/serviceproviders_number"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_peraonal_3_ed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView12"
+                    android:background="@drawable/edit_but"
+                    android:ems="10"
+                    android:gravity="center"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_3_6"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_peraonal_3_ed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView13"
+                    android:background="@drawable/edit_but"
+                    android:ems="10"
+                    android:gravity="center"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/buy_details_12"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_peraonal_3_ed3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView14"
+                    android:background="@drawable/edit_but"
+                    android:ems="10"
+                    android:gravity="center"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/mybusiness_personal_3_button2"
+                style="@style/tv_content_17_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_ok"
+                android:text="@string/mybusiness_company_10" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

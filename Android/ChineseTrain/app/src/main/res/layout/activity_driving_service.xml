@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ds_view_top"
+        layout="@layout/view_top" />
+
+    <LinearLayout
+        android:id="@+id/ds_viatg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ds_view_top" >
+
+        <include layout="@layout/ieauto_autogroup_text_gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ds_rl_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ds_viatg"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ds_cb"
+            android:text="全选"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/ds_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cb"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_b"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ds_rl_cb"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/findsubstitutedriv_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ds_bottom"
+        android:layout_below="@+id/view_b"
+        android:layout_marginBottom="5dp"
+        android:divider="@color/gray"
+        android:dividerHeight="1px" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/ds_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+         >
+
+        <Button
+            android:id="@+id/dsa_btn_ok"
+            style="@style/tv_content_17_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_ok"
+            android:text="@string/comment_perfection" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="240dip"
+    android:background="#fff"
+    android:clipToPadding="false"
+    android:scrollY="24dip" >
+
+    <ImageView
+        android:id="@+id/iv_cheyouquan_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/wx_3"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_cheyouquan_progress"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bikers"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_cheyouquan_neckname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_cheyouquan_background"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/tv_cheyouquan_face"
+        android:text="@string/neckname"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/tv_cheyouquan_face"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_cheyouquan_neckname"
+        android:layout_marginRight="58dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/face_history_selected"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="8"
+            android:drawableLeft="@drawable/e4_2_081_7"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/enter_basic_info" />
+    </LinearLayout>
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/resgistercar_brand" />
+
+        <Button
+            android:id="@+id/btn_resgister2_brand"
+            style="@style/tv_content_14_gar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center"
+            android:text="奥迪"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/resgistercar_cars" />
+
+        <Button
+            android:id="@+id/btn_resgister2_series"
+            style="@style/tv_content_14_gar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center"
+            android:text="A1"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_city" />
+
+        <TextView
+            android:id="@+id/tv_resgister2_city"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btn_resgister2_switch_city"
+            style="@style/tv_content_14_gar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/switching_city" />
+    </LinearLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/chk_resgister2_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cb"
+            android:button="@null" />
+
+        <Button
+            android:id="@+id/btn_resgister2_perfection"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:text="@string/resgister_perfection_readandagree" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_resgister2_submit"
+        style="@style/tv_content_17_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_ok"
+        android:gravity="center"
+        android:onClick="doClick"
+        android:text="@string/submit" />
+
+</LinearLayout>

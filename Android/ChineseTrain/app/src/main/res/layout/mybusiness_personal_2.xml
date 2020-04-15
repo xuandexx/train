@@ -1,0 +1,486 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_1" />
+
+                <Button
+                    android:id="@+id/mybusiness_personal_2_button2"
+                    style="@style/tv_content_17_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:background="@drawable/b1_004_1"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_13" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_2" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_3"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_4"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_5"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_6"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_7"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_8"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_9"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                     style="@style/tv_content_17_black"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_10"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/mybusiness_personal_2_spinner9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/button_e1_009"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_11"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_12"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_13"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_14"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_15"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_16"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <include layout="@layout/ieauto_autogroup_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/mybusiness_personal_2_17"
+                    tools:ignore="DuplicateIds" />
+
+                <cn.ieauto.autogroup.android.widget.MyEditText
+                    android:id="@+id/mybusiness_personal_2_ed7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@drawable/edit_but"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/mybusiness_personal_2_Submit"
+                style="@style/tv_content_17_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_ok"
+                android:text="@string/mybusiness_company_10" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="DuplicateIds" >
+
+            <LinearLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/e4_2_081_7"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tv_content_17_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/findsubstitutedriv_tirle_1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <include layout="@layout/ieauto_autogroup_text_gray" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/nearbyhel_radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent" >
+
+                    <RadioButton
+                        android:id="@+id/nearbyhel_radio0"
+                        style="@style/tv_content_17_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="@string/findsubstitutedriv_tirle_2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d2d2d2" />
+
+                    <RadioButton
+                        android:id="@+id/nearbyhel_radio1"
+                        style="@style/tv_content_17_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="@string/findsubstitutedriv_tirle_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d2d2d2" />
+
+                    <RadioButton
+                        android:id="@+id/nearbyhel_radio2"
+                        style="@style/tv_content_17_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="@string/findsubstitutedriv_tirle_4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d2d2d2" />
+
+                    <RadioButton
+                        android:id="@+id/nearbyhel_radio3"
+                        style="@style/tv_content_17_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="@string/findsubstitutedriv_tirle_5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d2d2d2" />
+
+                    <RadioButton
+                        android:id="@+id/nearbyhel_radio4"
+                        style="@style/tv_content_17_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="@string/findsubstitutedriv_tirle_6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d2d2d2" />
+
+                    <RadioButton
+                        android:id="@+id/nearbyhel_radio5"
+                        style="@style/tv_content_17_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="@string/findsubstitutedriv_tirle_9" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/ieauto_autogroup_text_gray" />
+
+            <cn.ieauto.autogroup.android.widget.MyEditText
+                android:id="@+id/nearbyhel_edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_but"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="@string/iwanttohelp_8"
+                android:maxLines="2"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/nearbyhel_submit"
+                style="@style/tv_content_17_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/e19_5_064_2"
+                android:text="@string/comment_perfection" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

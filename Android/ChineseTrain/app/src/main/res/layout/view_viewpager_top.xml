@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/viewpager_title_but_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="本地车代验"
+            android:textColor="#ff5e2f"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/viewpager_title_but_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="牌车代验"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/viewpager_title_but_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="代开委托书"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewpager_title_tv_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff5e2f" />
+
+        <TextView
+            android:id="@+id/viewpager_title_tv_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d2d2d2" />
+
+        <TextView
+            android:id="@+id/viewpager_title_tv_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+
+</LinearLayout>

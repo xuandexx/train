@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/et_view_top"
+        layout="@layout/view_top" />
+
+    <ListView
+        android:id="@+id/ridersevaliation_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_view_top"
+        android:background="#eee"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        tools:ignore="PxUsage" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/carpool_spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/carpool_spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/carpool_spinner3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/carpool_Relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/carpool_button1"
+            style="@style/tv_content_17_white"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_e1_009"
+            android:text="@string/carpool_button1" />
+
+        <cn.ieauto.autogroup.android.widget.PasteEditText
+            android:id="@+id/carpool_editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/carpool_button1"
+            android:background="@drawable/edit_but"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/carpool_edit" >
+        </cn.ieauto.autogroup.android.widget.PasteEditText>
+    </RelativeLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        tools:ignore="PxUsage" >
+    </ListView> -->
+    <TextView
+        android:id="@+id/tv_carpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+         android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="功能暂未开通"/>
+
+</LinearLayout>

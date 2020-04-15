@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_top" />
+
+    <include layout="@layout/ieauto_autogroup_text_gray" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp" >
+
+        <cn.ieauto.autogroup.android.widget.MyEditText
+            android:id="@+id/fnf_et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ffs_addcontracts"
+            android:background="@drawable/edit_but"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/findnewfriends_2"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/ffs_addcontracts"
+            style="@style/tv_content_17_white"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_e1_009"
+            android:text="@string/findnewfriends_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/textview_myphone"
+            style="@style/tv_content_14_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/myphone" />
+
+        <TextView
+            android:id="@+id/findnewfriends_tv_phone"
+            style="@style/tv_content_14_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textview_myphone"
+            android:gravity="center_vertical"
+            android:text="@string/_18901330037" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/findnewfriends_RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@string/search"
+            android:src="@drawable/d3_1_078_2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/findnewfriends_4" />
+    </LinearLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/findnewfriends_RelativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"
+            android:contentDescription="@string/conditional_search"
+            android:src="@drawable/d3_1_078_3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center"
+            android:text="@string/findnewfriends_5" />
+    </RelativeLayout>
+
+    <include layout="@layout/ieauto_autogroup_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/SearchNewfriend_addphonecontacts"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"
+            android:contentDescription="@string/phone"
+            android:src="@drawable/d3_1_078_1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/tv_content_17_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center"
+            android:text="@string/findnewfriends_3" />
+    </RelativeLayout>
+
+</LinearLayout>

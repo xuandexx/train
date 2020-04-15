@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vl_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UselessParent,DisableBaselineAlignment" >
+
+        <LinearLayout
+            android:id="@+id/ai_ll_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/tv_content_17_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="城市"
+                />
+
+            <ImageView
+                android:id="@+id/vc_img_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/main_array_bottom"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ai_ll_evaluation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/text2"
+                style="@style/tv_content_17_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                 android:text="车型"/>
+
+            <ImageView
+                android:id="@+id/vc_img_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/main_array_bottom"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ai_ll_evaluation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/text3"
+                style="@style/tv_content_17_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                 android:text="价格"/>
+
+            <ImageView
+                android:id="@+id/vc_img_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/main_array_bottom"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ai_ll_evaluation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/text4"
+                style="@style/tv_content_17_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                 android:text="年份"/>
+
+            <ImageView
+                android:id="@+id/vc_img_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/main_array_bottom"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ai_ll_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_e1_009"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/ai_tv_price"
+                style="@style/tv_content_17_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+         <RelativeLayout
+            android:id="@+id/view_center_rl_cb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tv_content_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/ai_cb"
+                android:text="全选"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/aibuycar_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/cb"
+                android:button="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
