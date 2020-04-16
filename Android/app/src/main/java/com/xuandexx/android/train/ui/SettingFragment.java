@@ -20,11 +20,10 @@ import android.os.Bundle;
  */
 public class SettingFragment extends BaseFragment {
 
-    private static final String TAG = SettingFragment.class.getSimpleName();
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        TAG = this.getClass().getSimpleName();
     }
 
     @Override

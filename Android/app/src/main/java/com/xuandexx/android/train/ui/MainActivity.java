@@ -13,19 +13,16 @@
  */
 package com.xuandexx.android.train.ui;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.xuandexx.android.train.R;
-import com.xuandexx.android.train.base.BaseApplication;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.x;
@@ -55,13 +52,14 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
-        startActivity(new Intent(this, LoginActivity.class));
+        initEvent();
+//        startActivity(new Intent(this, LoginActivity.class));
         //make sure activity will not in background if user is logged into another device or removed
-        if (BaseApplication.getUserToken() == null) {
-            this.finish();
-            startActivity(LoginActivity.class);
-            return;
-        }
+//        if (BaseApplication.getUserToken() == null) {
+//            this.finish();
+//            startActivity(LoginActivity.class);
+//            return;
+//        }
         if (savedInstanceState != null) {
             loge("get fragments from saveInstanceState");
             contentFragment = (ContentFragment) getSupportFragmentManager().getFragment(savedInstanceState, ContentFragment.class.getSimpleName());
@@ -80,10 +78,8 @@ public class MainActivity extends BaseActivity {
         // 获取华为 HMS 推送 token
     }
 
-    /**
-     * init views
-     */
-    private void initView() {
+    @Override
+    protected void initEvent() {
         Log.d(TAG, "initView");
         mTabs = new Button[3];
         mTabs[0] = (Button) findViewById(R.id.btn_conversation);
@@ -146,7 +142,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            moveTaskToBack(false);
+            moveTaskToBack(true);
             return true;
         }
         return super.onKeyDown(keyCode, event);

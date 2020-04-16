@@ -5,10 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
+
+import org.xutils.x;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -19,11 +25,17 @@ import java.util.Map;
  */
 public abstract class BaseFragment extends Fragment {
 
-    protected static String TAG;
+    protected String TAG;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return x.view().inject(this, inflater, container);
+    }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void onViewCreated(View v, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(v, savedInstanceState);
         initView();
         initEvent();
     }

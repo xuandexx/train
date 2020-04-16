@@ -47,6 +47,7 @@ public class LoginActivity extends BaseActivity {
 
 
     private boolean progressShow;
+
     private boolean autoLogin = false;
 
     @ViewInject(R.id.username)
@@ -63,6 +64,7 @@ public class LoginActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
+        initEvent();
         // if user changed, clear the password
         usernameEditText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -104,13 +106,14 @@ public class LoginActivity extends BaseActivity {
      * @param view
      */
     public void login(View view) {
+        startActivity(MainActivity.class);
+        finish();
         if (!CommonUtils.isNetWorkConnected(this)) {
             Toast.makeText(this, R.string.network_isnot_available, Toast.LENGTH_SHORT).show();
             return;
         }
         String currentUsername = usernameEditText.getText().toString().trim();
         String currentPassword = passwordEditText.getText().toString().trim();
-
         if (TextUtils.isEmpty(currentUsername)) {
             Toast.makeText(this, R.string.User_name_cannot_be_empty, Toast.LENGTH_SHORT).show();
             return;
@@ -133,8 +136,6 @@ public class LoginActivity extends BaseActivity {
         });
         pd.setMessage(getString(R.string.Is_landing));
         pd.show();
-
-
         final long start = System.currentTimeMillis();
         // call login method
         Log.d(TAG, "EMClient.getInstance().login");
@@ -207,5 +208,10 @@ public class LoginActivity extends BaseActivity {
         if (autoLogin) {
             return;
         }
+    }
+
+    @Override
+    protected void initEvent() {
+
     }
 }

@@ -14,21 +14,42 @@
 package com.xuandexx.android.train.ui;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.xuandexx.android.train.R;
+import com.xuandexx.android.train.common.CommonUtils;
+
+import org.xutils.view.annotation.ContentView;
 
 /**
- * contact list
+ * 内容提供
  */
 public class ContentFragment extends BaseFragment {
 
-    private static final String TAG = ContentFragment.class.getSimpleName();
+    private TextView errorText;
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View root;
+        if (CommonUtils.isNetWorkConnected(this.getActivity())) {
+            root = null;
+        } else {
+            root = inflater.inflate(R.layout.em_chat_neterror_item, container, false);
+            errorText = (TextView) root.findViewById(R.id.tv_connect_errormsg);
+            errorText.setText("网络连接中断");
+        }
+        return root;
     }
+
 
     @Override
     protected void initView() {
+        TAG = this.getClass().getSimpleName();
     }
 
     @Override

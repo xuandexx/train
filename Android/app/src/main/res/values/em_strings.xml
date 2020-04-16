@@ -93,8 +93,8 @@
     <string name="book_black">Black list</string>
     <string name="set_custom_appkey">Set custom App key</string>
     <string name="set_custom_server">Set custom servers</string>
-    <string name="session">Conversation</string>
-    <string name="address_book">Address book</string>
+    <string name="content">Content</string>
+    <string name="history">History</string>
     <string name="setting">Settings</string>
     <string name="now_refresh_list">Loading data</string>
     <string name="Application_and_notify">Invitation and notification</string>

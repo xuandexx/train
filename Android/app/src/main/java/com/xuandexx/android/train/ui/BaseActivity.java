@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * 基类
  */
-public class BaseActivity extends FragmentActivity {
+public abstract class BaseActivity extends FragmentActivity {
 
     protected String TAG;
 
@@ -117,4 +117,5 @@ public class BaseActivity extends FragmentActivity {
         Log.i(TAG, msg);
     }
 
+    protected abstract void initEvent();
 }
