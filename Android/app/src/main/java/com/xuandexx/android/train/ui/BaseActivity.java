@@ -1,22 +1,9 @@
-/**
- * Copyright (C) 2016 Hyphenate Inc. All rights reserved.
- * <p>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.xuandexx.android.train.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -24,6 +11,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * 基类
+ */
 public class BaseActivity extends FragmentActivity {
 
     @Override
@@ -54,12 +44,11 @@ public class BaseActivity extends FragmentActivity {
     /**
      * 功能描述：带数据的 Activity 之间的跳转
      *
-     * @param activity 发起跳转的 Activity 实例
-     * @param cls      目标 Activity 实例
-     * @param hashMap  传递的数据
+     * @param cls     目标 Activity 实例
+     * @param hashMap 传递的数据
      */
-    public void startActivity(Activity activity, Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
-        Intent intent = new Intent(activity, cls);
+    public void startActivity(Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
+        Intent intent = new Intent(this, cls);
         Iterator<?> iterator = hashMap.entrySet().iterator();
         while (iterator.hasNext()) {
             @SuppressWarnings("unchecked")
@@ -83,7 +72,23 @@ public class BaseActivity extends FragmentActivity {
                 intent.putExtra(key, (double) value);
             }
         }
-        activity.startActivity(intent);
+        startActivity(intent);
+    }
+
+
+    /**
+     * 功能描述：带数据的 Activity 之间的跳转
+     *
+     * @param key    实体类Key
+     * @param cls    目标 Activity 实例
+     * @param object 实体类
+     */
+    public void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
+        Intent intent = new Intent(this, cls);
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(key, object);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
 }
