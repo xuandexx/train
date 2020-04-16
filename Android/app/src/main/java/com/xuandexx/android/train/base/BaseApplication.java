@@ -16,6 +16,8 @@ package com.xuandexx.android.train.base;
 import android.app.Application;
 import android.content.Context;
 
+import org.xutils.x;
+
 /**
  * 应用程序入口
  */
@@ -25,26 +27,26 @@ public class BaseApplication extends Application {
 
     private static BaseApplication instance;
 
-    public final String userToken = "username";
-
-    /**
-     * nickname for current user, the nickname instead of ID be shown when user receive notification from APNs
-     */
-    public static String currentUserNick = "";
+    private static String userToken = null;
 
     @Override
     public void onCreate() {
         super.onCreate();
         applicationContext = this;
         instance = this;
-    }
-
-    public static BaseApplication getInstance() {
-        return instance;
+        x.Ext.init(this);
+        x.Ext.setDebug(true); //输出debug日志，开启会影响性能
     }
 
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
+    }
+
+    public static String getUserToken() {
+        if (userToken == null) {
+            userToken = "";
+        }
+        return userToken;
     }
 }

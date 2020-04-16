@@ -16,7 +16,6 @@ package com.xuandexx.android.train.ui;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
-import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.text.Editable;
@@ -30,42 +29,40 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hyphenate.EMCallBack;
-import com.hyphenate.chat.EMClient;
-import com.xuandexx.android.train.base.BaseApplication;
-import com.xuandexx.android.train.DemoHelper;
 import com.xuandexx.android.train.R;
-import com.xuandexx.android.train.db.DemoDBManager;
-import com.hyphenate.easeui.utils.EaseCommonUtils;
+import com.xuandexx.android.train.common.CommonUtils;
+
+import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.ViewInject;
+import org.xutils.x;
 
 /**
  * Login screen
  */
+
+@ContentView(R.layout.em_activity_login)
 public class LoginActivity extends BaseActivity {
     private static final String TAG = "LoginActivity";
     public static final int REQUEST_CODE_SETNICK = 1;
-    private EditText usernameEditText;
-    private EditText passwordEditText;
+
 
     private boolean progressShow;
     private boolean autoLogin = false;
 
+    @ViewInject(R.id.username)
+    private EditText usernameEditText;
+
+    @ViewInject(R.id.password)
+    private EditText passwordEditText;
+
+    @ViewInject(R.id.txt_service_ckeck)
+    TextView serviceCheckTV;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // enter the main activity if already logged in
-        if (DemoHelper.getInstance().isLoggedIn()) {
-            autoLogin = true;
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-
-            return;
-        }
-        setContentView(R.layout.em_activity_login);
-
-        usernameEditText = (EditText) findViewById(R.id.username);
-        passwordEditText = (EditText) findViewById(R.id.password);
-
+        x.view().inject(this);
         // if user changed, clear the password
         usernameEditText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -83,7 +80,6 @@ public class LoginActivity extends BaseActivity {
 
             }
         });
-
         passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -96,11 +92,8 @@ public class LoginActivity extends BaseActivity {
             }
         });
 
-        if (DemoHelper.getInstance().getCurrentUsernName() != null) {
-            usernameEditText.setText(DemoHelper.getInstance().getCurrentUsernName());
-        }
+        usernameEditText.setHint("请输入用户名");
 
-        TextView serviceCheckTV = (TextView) findViewById(R.id.txt_service_ckeck);
         serviceCheckTV.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
 
     }
@@ -111,7 +104,7 @@ public class LoginActivity extends BaseActivity {
      * @param view
      */
     public void login(View view) {
-        if (!EaseCommonUtils.isNetWorkConnected(this)) {
+        if (!CommonUtils.isNetWorkConnected(this)) {
             Toast.makeText(this, R.string.network_isnot_available, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -141,87 +134,72 @@ public class LoginActivity extends BaseActivity {
         pd.setMessage(getString(R.string.Is_landing));
         pd.show();
 
-        // After logout，the DemoDB may still be accessed due to async callback, so the DemoDB will be re-opened again.
-        // close it before login to make sure DemoDB not overlap
-        DemoDBManager.getInstance().closeDB();
-
-        // reset current user name before login
-        DemoHelper.getInstance().setCurrentUserName(currentUsername);
 
         final long start = System.currentTimeMillis();
         // call login method
         Log.d(TAG, "EMClient.getInstance().login");
-        EMClient.getInstance().login(currentUsername, currentPassword, new EMCallBack() {
-
-            @Override
-            public void onSuccess() {
-                Log.d(TAG, "login: onSuccess");
-
-
-                // ** manually load all local groups and conversation
-                EMClient.getInstance().groupManager().loadAllGroups();
-                EMClient.getInstance().chatManager().loadAllConversations();
-
-                // update current user's display name for APNs
-                boolean updatenick = EMClient.getInstance().pushManager().updatePushNickname(
-                        BaseApplication.currentUserNick.trim());
-                if (!updatenick) {
-                    Log.e("LoginActivity", "update current user nick fail");
-                }
-
-                if (!LoginActivity.this.isFinishing() && pd.isShowing()) {
-                    pd.dismiss();
-                }
-
-                // get user's info (this should be get from App's server or 3rd party service)
-                DemoHelper.getInstance().getUserProfileManager().asyncGetCurrentUserInfo();
-
-                Intent intent = new Intent(LoginActivity.this,
-                        MainActivity.class);
-                startActivity(intent);
-
-                finish();
-            }
-
-            @Override
-            public void onProgress(int progress, String status) {
-                Log.d(TAG, "login: onProgress");
-            }
-
-            @Override
-            public void onError(final int code, final String message) {
-                Log.d(TAG, "login: onError: " + code);
-                if (!progressShow) {
-                    return;
-                }
-                runOnUiThread(new Runnable() {
-                    public void run() {
-                        pd.dismiss();
-                        Toast.makeText(getApplicationContext(), getString(R.string.Login_failed) + message,
-                                Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        });
+//        EMClient.getInstance().login(currentUsername, currentPassword, new EMCallBack() {
+//
+//            @Override
+//            public void onSuccess() {
+//                Log.d(TAG, "login: onSuccess");
+//
+//
+//                // ** manually load all local groups and conversation
+//                EMClient.getInstance().groupManager().loadAllGroups();
+//                EMClient.getInstance().chatManager().loadAllConversations();
+//
+//                // update current user's display name for APNs
+//                boolean updatenick = EMClient.getInstance().pushManager().updatePushNickname(
+//                        BaseApplication.currentUserNick.trim());
+//                if (!updatenick) {
+//                    Log.e("LoginActivity", "update current user nick fail");
+//                }
+//
+//                if (!LoginActivity.this.isFinishing() && pd.isShowing()) {
+//                    pd.dismiss();
+//                }
+//
+//                // get user's info (this should be get from App's server or 3rd party service)
+//                DemoHelper.getInstance().getUserProfileManager().asyncGetCurrentUserInfo();
+//
+//                Intent intent = new Intent(LoginActivity.this,
+//                        MainActivity.class);
+//                startActivity(intent);
+//
+//                finish();
+//            }
+//
+//            @Override
+//            public void onProgress(int progress, String status) {
+//                Log.d(TAG, "login: onProgress");
+//            }
+//
+//            @Override
+//            public void onError(final int code, final String message) {
+//                Log.d(TAG, "login: onError: " + code);
+//                if (!progressShow) {
+//                    return;
+//                }
+//                runOnUiThread(new Runnable() {
+//                    public void run() {
+//                        pd.dismiss();
+//                        Toast.makeText(getApplicationContext(), getString(R.string.Login_failed) + message,
+//                                Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//            }
+//        });
     }
 
-    /**
-     * register
-     *
-     * @param view
-     */
-    public void register(View view) {
-        startActivityForResult(new Intent(this, RegisterActivity.class), 0);
-    }
-
-    /**
-     * SDK service check
-     *
-     * @param v
-     */
-    public void serviceCheck(View v) {
-        startActivity(new Intent(this, ServiceCheckActivity.class));
-    }
+//    /**
+//     * register
+//     *
+//     * @param view
+//     */
+//    public void register(View view) {
+//        startActivityForResult(new Intent(this, RegisterActivity.class), 0);
+//    }
 
     @Override
     protected void onResume() {

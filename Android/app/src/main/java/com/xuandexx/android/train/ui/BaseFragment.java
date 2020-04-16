@@ -8,33 +8,30 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.StringRes;
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 /**
- * 基类
+ * contact list
  */
-public class BaseActivity extends FragmentActivity {
+public abstract class BaseFragment extends Fragment {
 
-    protected String TAG;
-
-    @Override
-    protected void onCreate(Bundle arg0) {
-        super.onCreate(arg0);
-    }
+    protected static String TAG;
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        initView();
+        initEvent();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
+    protected abstract void initView();
+
+    protected abstract void initEvent();
+
 
     /**
      * 功能描述:简单地 Activity 的跳转(不携带任何数据)
@@ -42,7 +39,7 @@ public class BaseActivity extends FragmentActivity {
      * @param cls 目标 Activity 实例
      */
     public void startActivity(Class<? extends Activity> cls) {
-        Intent intent = new Intent(this, cls);
+        Intent intent = new Intent(this.getActivity(), cls);
         startActivity(intent);
     }
 
@@ -53,7 +50,7 @@ public class BaseActivity extends FragmentActivity {
      * @param hashMap 传递的数据
      */
     public void startActivity(Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
-        Intent intent = new Intent(this, cls);
+        Intent intent = new Intent(this.getActivity(), cls);
         Iterator<?> iterator = hashMap.entrySet().iterator();
         while (iterator.hasNext()) {
             @SuppressWarnings("unchecked")
@@ -88,7 +85,7 @@ public class BaseActivity extends FragmentActivity {
      * @param object 实体类
      */
     public void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
-        Intent intent = new Intent(this, cls);
+        Intent intent = new Intent(this.getActivity(), cls);
         Bundle bundle = new Bundle();
         bundle.putParcelable(key, object);
         intent.putExtras(bundle);
@@ -97,20 +94,15 @@ public class BaseActivity extends FragmentActivity {
 
 
     public void toast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this.getActivity(), msg, Toast.LENGTH_SHORT).show();
     }
 
     public void toast(@StringRes int resId) {
-        Toast.makeText(this, resId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this.getActivity(), resId, Toast.LENGTH_SHORT).show();
     }
-
 
     public void loge(String msg) {
         Log.e(TAG, msg);
-    }
-
-    public void logd(String msg) {
-        Log.d(TAG, msg);
     }
 
     public void logi(String msg) {

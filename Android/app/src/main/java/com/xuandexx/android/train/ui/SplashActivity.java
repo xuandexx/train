@@ -3,7 +3,6 @@ package com.xuandexx.android.train.ui;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.xuandexx.android.train.R;
 
@@ -27,13 +26,7 @@ public class SplashActivity extends BaseActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        new Thread(new Runnable() {
-            public void run() {
-
-                //     startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-            }
-        }).start();
-
+        thread.start();
     }
 
     Thread thread = new Thread(new Runnable() {
@@ -41,7 +34,7 @@ public class SplashActivity extends BaseActivity {
         public void run() {
             try {
                 Thread.sleep(3000);
-                startActivity();
+                startActivity(LoginActivity.class);
             } catch (InterruptedException e) {
             }
         }
