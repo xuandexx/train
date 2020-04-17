@@ -31,10 +31,7 @@ import com.xuandexx.android.train.common.CommonUtils;
 import com.xuandexx.android.train.model.BannerItem;
 import com.xuandexx.android.train.model.VideoItem;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
-import org.xutils.x;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -187,7 +184,7 @@ public class ContentFragment extends BaseFragment {
     private void startAd() {
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
         // 当Activity显示出来后，每两秒切换一次图片显示
-        scheduledExecutorService.scheduleAtFixedRate(new ScrollTask(), 1, 2,
+        scheduledExecutorService.scheduleAtFixedRate(new ScrollTask(), 1, 4,
                 TimeUnit.SECONDS);
     }
 
