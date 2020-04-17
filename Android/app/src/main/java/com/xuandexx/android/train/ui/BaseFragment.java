@@ -1,6 +1,7 @@
 package com.xuandexx.android.train.ui;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -8,11 +9,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
+
+import com.xuandexx.android.train.R;
 
 import org.xutils.x;
 
@@ -23,9 +29,14 @@ import java.util.Map;
 /**
  * contact list
  */
-public abstract class BaseFragment extends Fragment {
-
+public abstract class BaseFragment<showDialog> extends Fragment {
+    //Log日志标记
     protected String TAG;
+
+    protected InputMethodManager inputMethodManager;
+
+
+    protected ProgressDialog pd;
 
     @Nullable
     @Override
@@ -36,6 +47,12 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(View v, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(v, savedInstanceState);
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
         initView();
         initEvent();
     }
@@ -50,7 +67,7 @@ public abstract class BaseFragment extends Fragment {
      *
      * @param cls 目标 Activity 实例
      */
-    public void startActivity(Class<? extends Activity> cls) {
+    protected void startActivity(Class<? extends Activity> cls) {
         Intent intent = new Intent(this.getActivity(), cls);
         startActivity(intent);
     }
@@ -61,7 +78,7 @@ public abstract class BaseFragment extends Fragment {
      * @param cls     目标 Activity 实例
      * @param hashMap 传递的数据
      */
-    public void startActivity(Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
+    protected void startActivity(Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
         Intent intent = new Intent(this.getActivity(), cls);
         Iterator<?> iterator = hashMap.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -96,7 +113,7 @@ public abstract class BaseFragment extends Fragment {
      * @param cls    目标 Activity 实例
      * @param object 实体类
      */
-    public void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
+    protected void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
         Intent intent = new Intent(this.getActivity(), cls);
         Bundle bundle = new Bundle();
         bundle.putParcelable(key, object);
@@ -105,20 +122,43 @@ public abstract class BaseFragment extends Fragment {
     }
 
 
-    public void toast(String msg) {
+    protected void toast(String msg) {
         Toast.makeText(this.getActivity(), msg, Toast.LENGTH_SHORT).show();
     }
 
-    public void toast(@StringRes int resId) {
+    protected void toast(@StringRes int resId) {
         Toast.makeText(this.getActivity(), resId, Toast.LENGTH_SHORT).show();
     }
 
-    public void loge(String msg) {
+    protected void loge(String msg) {
         Log.e(TAG, msg);
     }
 
-    public void logi(String msg) {
+    protected void logi(String msg) {
         Log.i(TAG, msg);
     }
 
+    protected <T extends View> T findViewById(int id) {
+        return this.getActivity().findViewById(id);
+    }
+
+    protected void hideSoftKeyboard() {
+        if (getActivity().getWindow().getAttributes().softInputMode != WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN) {
+            if (getActivity().getCurrentFocus() != null)
+                inputMethodManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),
+                        InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+    }
+
+    protected void showDialog(String msg) {
+        pd = new ProgressDialog(this.getActivity());
+        pd.setMessage(msg);
+        pd.setCanceledOnTouchOutside(false);
+        pd.show();
+    }
+
+
+    protected void dismissDialog() {
+        pd.dismiss();
+    }
 }
