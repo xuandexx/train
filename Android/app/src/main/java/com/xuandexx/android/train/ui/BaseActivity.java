@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.StringRes;
@@ -53,7 +52,7 @@ public abstract class BaseActivity extends FragmentActivity {
      * @param cls     目标 Activity 实例
      * @param hashMap 传递的数据
      */
-    public void startActivity(Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
+    protected void startActivity(Class<? extends Activity> cls, HashMap<String, ? extends Object> hashMap) {
         Intent intent = new Intent(this, cls);
         Iterator<?> iterator = hashMap.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -88,7 +87,7 @@ public abstract class BaseActivity extends FragmentActivity {
      * @param cls    目标 Activity 实例
      * @param object 实体类
      */
-    public void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
+    protected void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
         Intent intent = new Intent(this, cls);
         Bundle bundle = new Bundle();
         bundle.putParcelable(key, object);
@@ -97,11 +96,11 @@ public abstract class BaseActivity extends FragmentActivity {
     }
 
 
-    public void toast(String msg) {
+    protected void toast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
-    public void toast(@StringRes int resId) {
+    protected void toast(@StringRes int resId) {
         Toast.makeText(this, resId, Toast.LENGTH_SHORT).show();
     }
 

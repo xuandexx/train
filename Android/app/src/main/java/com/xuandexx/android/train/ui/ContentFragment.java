@@ -19,17 +19,13 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.xuandexx.android.train.R;
 import com.xuandexx.android.train.common.CommonUtils;
-
-import org.xutils.view.annotation.ContentView;
 
 /**
  * 内容提供
@@ -56,7 +52,7 @@ public class ContentFragment extends BaseFragment {
             root = inflater.inflate(R.layout.fragment_content, container, false);
         } else {
             root = inflater.inflate(R.layout.em_chat_neterror_item, container, false);
-            errorText = (TextView) root.findViewById(R.id.tv_connect_errormsg);
+            errorText = root.findViewById(R.id.tv_connect_errormsg);
             errorText.setText("网络连接中断");
         }
         return root;
@@ -97,8 +93,8 @@ public class ContentFragment extends BaseFragment {
         clearSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                query.getText().clear();
                 hideSoftKeyboard();
-                searchMessages();
             }
         });
         cancleView.setOnClickListener(new View.OnClickListener() {
@@ -109,8 +105,4 @@ public class ContentFragment extends BaseFragment {
         });
     }
 
-
-    private void searchMessages() {
-
-    }
 }

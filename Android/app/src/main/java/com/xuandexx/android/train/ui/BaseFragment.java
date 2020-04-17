@@ -2,6 +2,7 @@ package com.xuandexx.android.train.ui;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -11,14 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
-
-import com.xuandexx.android.train.R;
 
 import org.xutils.x;
 
@@ -53,6 +51,7 @@ public abstract class BaseFragment<showDialog> extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
         initView();
         initEvent();
     }
