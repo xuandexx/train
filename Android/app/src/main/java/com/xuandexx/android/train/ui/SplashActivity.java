@@ -17,7 +17,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle arg0) {
         setContentView(R.layout.em_activity_splash);
         super.onCreate(arg0);
-        RelativeLayout rootLayout = (RelativeLayout) findViewById(R.id.splash_root);
+        RelativeLayout rootLayout = findViewById(R.id.splash_root);
         AlphaAnimation animation = new AlphaAnimation(0.3f, 1.0f);
         animation.setDuration(1500);
         rootLayout.startAnimation(animation);
@@ -26,22 +26,22 @@ public class SplashActivity extends BaseActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        thread.start();
+
     }
 
     @Override
     protected void initEvent() {
-
-    }
-
-    Thread thread = new Thread(new Runnable() {
-        @Override
-        public void run() {
-            try {
-                Thread.sleep(3000);
-                startActivity(LoginActivity.class);
-            } catch (InterruptedException e) {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(sleepTime);
+                    startActivity(LoginActivity.class);
+                } catch (InterruptedException e) {
+                    logi(e.getMessage());
+                }
             }
-        }
-    });
+        });
+        thread.start();
+    }
 }
