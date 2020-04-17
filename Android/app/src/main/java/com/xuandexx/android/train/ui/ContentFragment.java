@@ -1,10 +1,12 @@
 package com.xuandexx.android.train.ui;
 
 import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,16 +18,30 @@ import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 
+import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
+import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.xuandexx.android.train.R;
 import com.xuandexx.android.train.adapter.HomePageADAdapter;
 import com.xuandexx.android.train.common.CommonUtils;
 import com.xuandexx.android.train.model.BannerItem;
+import com.xuandexx.android.train.model.VideoItem;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.xutils.x;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 内容提供
@@ -65,6 +81,10 @@ public class ContentFragment extends BaseFragment {
     private View dot3;
     private View dot4;
     private View dot5;
+    // 图片缓存路径
+    public static String IMAGE_CACHE_PATH = "imageloader/Cache";
+
+    private ScheduledExecutorService scheduledExecutorService;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -96,21 +116,19 @@ public class ContentFragment extends BaseFragment {
         listView = (ListView) findViewById(R.id.listview);
         cancleView = (TextView) findViewById(R.id.tv_cancel);
         adViewPager = (ViewPager) findViewById(R.id.vp);
-        mImageLoader = ImageLoader.getInstance();
 
         ArrayList<BannerItem> list = new ArrayList<BannerItem>();
         for (int i = 0; i < 6; i++) {
             BannerItem tempItem = new BannerItem();
             tempItem.setAd(false);
-            tempItem.setImg("http://i0.hdslb.com/promote/1f451b6b07a1984be5619f865edd5449.jpg");
-            tempItem.setLink("http://www.bilibili.com");
+            tempItem.setImg("https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2235388275,3809603206&fm=85&app=79&f=JPG?w=121&h=75&s=8197C732C535FA313E526557030030BB");
+            tempItem.setLink("https://www.bilibili.com/");
             tempItem.setTitle("[示例数据]");
             list.add(tempItem);
         }
         list.get(0).setAd(true);
 
         imageViews = new ArrayList<ImageView>();
-
         options = new DisplayImageOptions.Builder()
                 .showStubImage(R.drawable.top_banner_android)
                 .showImageForEmptyUri(R.drawable.top_banner_android)
@@ -133,7 +151,21 @@ public class ContentFragment extends BaseFragment {
         dots.add(dot3);
         dots.add(dot4);
         dots.add(dot5);
-
+        File cacheDir = com.nostra13.universalimageloader.utils.StorageUtils
+                .getOwnCacheDirectory(this.getActivity().getApplicationContext(),
+                        IMAGE_CACHE_PATH);
+        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+                .cacheInMemory(true).cacheOnDisc(true).build();
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+                this.getActivity()).defaultDisplayImageOptions(defaultOptions)
+                .memoryCache(new LruMemoryCache(12 * 1024 * 1024))
+                .memoryCacheSize(12 * 1024 * 1024)
+                .discCacheSize(32 * 1024 * 1024).discCacheFileCount(100)
+                .discCache(new UnlimitedDiscCache(cacheDir))
+                .threadPriority(Thread.NORM_PRIORITY - 2)
+                .tasksProcessingOrder(QueueProcessingType.LIFO).build();
+        ImageLoader.getInstance().init(config);
+        mImageLoader = ImageLoader.getInstance();
         for (int i = 0; i < list.size(); i++) {
             ImageView imageView = new ImageView(this.getActivity());
             // 异步加载图片
@@ -146,6 +178,51 @@ public class ContentFragment extends BaseFragment {
         }
         adViewPager.setAdapter(new HomePageADAdapter(list, (BaseActivity) getActivity(), imageViews));//
         // 设置填充ViewPager页面的适配器
+        adViewPager.addOnPageChangeListener(new HomePageADChangeListener());
+
+        MainTask homePageTask = new MainTask();
+        homePageTask.execute("0");
+    }
+
+    private void startAd() {
+        scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
+        // 当Activity显示出来后，每两秒切换一次图片显示
+        scheduledExecutorService.scheduleAtFixedRate(new ScrollTask(), 1, 2,
+                TimeUnit.SECONDS);
+    }
+
+    private class ScrollTask implements Runnable {
+
+        @Override
+        public void run() {
+            synchronized (adViewPager) {
+                currentItem = (currentItem + 1) % imageViews.size();
+                handler.obtainMessage().sendToTarget();
+            }
+        }
+    }
+
+    private class HomePageADChangeListener implements ViewPager.OnPageChangeListener {
+
+        private int oldPosition = 0;
+
+        @Override
+        public void onPageScrollStateChanged(int arg0) {
+
+        }
+
+        @Override
+        public void onPageScrolled(int arg0, float arg1, int arg2) {
+
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+            currentItem = position;
+            dots.get(oldPosition).setBackgroundResource(R.drawable.dot_normal);
+            dots.get(position).setBackgroundResource(R.drawable.dot_focused);
+            oldPosition = position;
+        }
     }
 
     @Override
@@ -185,4 +262,91 @@ public class ContentFragment extends BaseFragment {
         });
     }
 
+
+    private class MainTask extends AsyncTask<String, Void, Integer> {
+        ArrayList<BannerItem> Listtemp = new ArrayList<BannerItem>();
+        ArrayList<VideoItem> bangumiListtemp = new ArrayList<VideoItem>();
+        ArrayList<VideoItem> dougaListtemp = new ArrayList<VideoItem>();
+        ArrayList<VideoItem> musicListtemp = new ArrayList<VideoItem>();
+        ArrayList<VideoItem> danceListtemp = new ArrayList<VideoItem>();
+        ArrayList<VideoItem> entListtemp = new ArrayList<VideoItem>();
+        ArrayList<VideoItem> movieListtemp = new ArrayList<VideoItem>();
+        ArrayList<VideoItem> kejiListtemp = new ArrayList<VideoItem>();
+
+        public MainTask() {
+            // TODO Auto-generated constructor stub
+            Log.d("T^T", "----->MainTask");
+        }
+
+        @Override
+        protected Integer doInBackground(String... params) {
+            Log.d("T^T", "----->doinbackgroud");
+            JSONObject bannerjson;
+            JSONObject bangumijson;
+
+            try {
+//                bannerjson = new JSONObject(HttpUtil.getHtmlString("http://www.bilibili.com/index/slideshow.json"));
+//                JSONArray array = bannerjson.getJSONArray("list");
+//                for (int i = 0; i < array.length(); i++) {
+//
+//                    BannerItem item = new BannerItem();
+//                    item.setImg(array.getJSONObject(i).getString("img").toString());
+//                    item.setTitle(array.getJSONObject(i).getString("title").toString());
+//                    item.setLink(array.getJSONObject(i).getString("link").toString());
+//                    item.setAd(false);
+//                    Listtemp.add(item);
+//                }
+//
+//                bangumijson = new JSONObject(HttpUtil.getHtmlString("http://www.bilibili.com/index/ding.json"));
+//                //Log.i("gg",bangumijson.toString());
+//                JSONObject bangumiarray = bangumijson.getJSONObject("bangumi");
+//                for (int i = 0; i < 4; i++) {
+//                    VideoItem item = new VideoItem();
+//                    item.setAid(bangumiarray.getJSONObject(i + "").getString("aid").toString());
+//                    item.setTypeid(bangumiarray.getJSONObject(i + "").getString("typeid").toString());
+//                    item.setTitle(bangumiarray.getJSONObject(i + "").getString("title").toString());
+//                    item.setSbutitle(bangumiarray.getJSONObject(i + "").optString("sbutitle").toString());
+//                    item.setPlay(bangumiarray.getJSONObject(i + "").getString("play").toString());
+//                    item.setReview(bangumiarray.getJSONObject(i + "").getString("review").toString());
+//                    item.setVideo_review(bangumiarray.getJSONObject(i + "").getString("video_review").toString());
+//                    item.setFavorites(bangumiarray.getJSONObject(i + "").getString("favorites").toString());
+//                    item.setMid(bangumiarray.getJSONObject(i + "").getString("mid").toString());
+//                    item.setAuthor(bangumiarray.getJSONObject(i + "").getString("author").toString());
+//                    item.setDescription(bangumiarray.getJSONObject(i + "").getString("description").toString());
+//                    item.setCreate(bangumiarray.getJSONObject(i + "").getString("create").toString());
+//                    item.setPic(bangumiarray.getJSONObject(i + "").getString("pic").toString());
+//                    item.setCredit(bangumiarray.getJSONObject(i + "").getString("credit").toString());
+//                    item.setCoins(bangumiarray.getJSONObject(i + "").getString("coins").toString());
+//                    item.setDuration(bangumiarray.getJSONObject(i + "").getString("duration").toString());
+//                    bangumiListtemp.add(item);
+//                }
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+//            Listtemp.get(Listtemp.size() - 1).
+//                    setAd(true);
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Integer result) {
+            super.onPostExecute(result);
+            Log.d("T^T", "----->onpostexcute");
+//            adList = Listtemp;
+//            videoItemList = bangumiListtemp;
+//            dougaItemList = dougaListtemp;
+//            musicItemList = musicListtemp;
+//            danceItemList = danceListtemp;
+//            entItemList = entListtemp;
+//            movieItemList = movieListtemp;
+//            kejiItemList = kejiListtemp;
+//            initAdData();
+//			initBangumiData();
+            startAd();
+//			adViewPager.notifyAll();
+
+        }
+
+    }
 }
