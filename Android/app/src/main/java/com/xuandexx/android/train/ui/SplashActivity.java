@@ -21,11 +21,17 @@ public class SplashActivity extends BaseActivity {
         AlphaAnimation animation = new AlphaAnimation(0.3f, 1.0f);
         animation.setDuration(1500);
         rootLayout.startAnimation(animation);
+        initEvent();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
+    }
+
+    @Override
+    protected void initView() {
 
     }
 

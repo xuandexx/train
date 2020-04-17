@@ -1,19 +1,8 @@
-/**
- * Copyright (C) 2016 Hyphenate Inc. All rights reserved.
- * <p>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.xuandexx.android.train.ui;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -21,11 +10,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.viewpager.widget.ViewPager;
+
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.xuandexx.android.train.R;
+import com.xuandexx.android.train.adapter.HomePageADAdapter;
 import com.xuandexx.android.train.common.CommonUtils;
+import com.xuandexx.android.train.model.BannerItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 内容提供
@@ -44,6 +44,28 @@ public class ContentFragment extends BaseFragment {
 
     private TextView cancleView;
 
+    //首页浮动广告
+    private ViewPager adViewPager;
+
+    // 当前图片的索引号
+    private int currentItem = 0;
+    // 滑动的图片集合
+    private List<ImageView> imageViews;
+
+    // 异步加载图片
+    private ImageLoader mImageLoader;
+    private DisplayImageOptions options;
+    // 图片标题正文的那些点
+    private List<View> dots;
+    private List<View> dotList;
+    // 定义的六个指示点
+    private View dot0;
+    private View dot1;
+    private View dot2;
+    private View dot3;
+    private View dot4;
+    private View dot5;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root;
@@ -58,6 +80,12 @@ public class ContentFragment extends BaseFragment {
         return root;
     }
 
+    private Handler handler = new Handler() {
+        public void handleMessage(android.os.Message msg) {
+            adViewPager.setCurrentItem(currentItem);
+        }
+    };
+
 
     @Override
     protected void initView() {
@@ -67,6 +95,57 @@ public class ContentFragment extends BaseFragment {
         searchView = (TextView) findViewById(R.id.tv_search);
         listView = (ListView) findViewById(R.id.listview);
         cancleView = (TextView) findViewById(R.id.tv_cancel);
+        adViewPager = (ViewPager) findViewById(R.id.vp);
+        mImageLoader = ImageLoader.getInstance();
+
+        ArrayList<BannerItem> list = new ArrayList<BannerItem>();
+        for (int i = 0; i < 6; i++) {
+            BannerItem tempItem = new BannerItem();
+            tempItem.setAd(false);
+            tempItem.setImg("http://i0.hdslb.com/promote/1f451b6b07a1984be5619f865edd5449.jpg");
+            tempItem.setLink("http://www.bilibili.com");
+            tempItem.setTitle("[示例数据]");
+            list.add(tempItem);
+        }
+        list.get(0).setAd(true);
+
+        imageViews = new ArrayList<ImageView>();
+
+        options = new DisplayImageOptions.Builder()
+                .showStubImage(R.drawable.top_banner_android)
+                .showImageForEmptyUri(R.drawable.top_banner_android)
+                .showImageOnFail(R.drawable.top_banner_android)
+                .cacheInMemory(true).cacheOnDisc(true)
+                .bitmapConfig(Bitmap.Config.RGB_565)
+                .imageScaleType(ImageScaleType.EXACTLY).build();
+        // 点
+        dots = new ArrayList<View>();
+        dotList = new ArrayList<View>();
+        dot0 = findViewById(R.id.v_dot0);
+        dot1 = findViewById(R.id.v_dot1);
+        dot2 = findViewById(R.id.v_dot2);
+        dot3 = findViewById(R.id.v_dot3);
+        dot4 = findViewById(R.id.v_dot4);
+        dot5 = findViewById(R.id.v_dot5);
+        dots.add(dot0);
+        dots.add(dot1);
+        dots.add(dot2);
+        dots.add(dot3);
+        dots.add(dot4);
+        dots.add(dot5);
+
+        for (int i = 0; i < list.size(); i++) {
+            ImageView imageView = new ImageView(this.getActivity());
+            // 异步加载图片
+            mImageLoader.displayImage(list.get(i).getImg(), imageView,
+                    options);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageViews.add(imageView);
+            dots.get(i).setVisibility(View.VISIBLE);
+            dotList.add(dots.get(i));
+        }
+        adViewPager.setAdapter(new HomePageADAdapter(list, (BaseActivity) getActivity(), imageViews));//
+        // 设置填充ViewPager页面的适配器
     }
 
     @Override
@@ -77,6 +156,7 @@ public class ContentFragment extends BaseFragment {
             }
 
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
             }
 
             public void afterTextChanged(Editable s) {

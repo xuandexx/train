@@ -117,7 +117,14 @@ public abstract class BaseActivity extends FragmentActivity {
         Log.i(TAG, msg);
     }
 
-    protected abstract void initEvent();
+    /**
+     * 初始化控件
+     */
+    protected abstract void initView();
 
+    /**
+     * 初始化事件
+     */
+    protected abstract void initEvent();
 
 }

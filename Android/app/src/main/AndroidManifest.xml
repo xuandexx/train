@@ -71,6 +71,9 @@
             android:name=".ui.MainActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
+        <activity android:name=".ui.AdWebviewActivity" />
+
+
     </application>
 
 

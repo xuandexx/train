@@ -79,6 +79,11 @@ public class MainActivity extends BaseActivity {
     }
 
     @Override
+    protected void initView() {
+        
+    }
+
+    @Override
     protected void initEvent() {
         Log.d(TAG, "initView");
         mTabs = new Button[3];
