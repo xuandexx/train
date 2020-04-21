@@ -24,12 +24,13 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected String TAG;
 
-    @Override
-    protected void onCreate(Bundle arg0) {
-        super.onCreate(arg0);
-        x.view().inject(this);
-        initEvent();
-    }
+//    @Override
+//    protected void onCreate(Bundle arg0) {
+//        super.onCreate(arg0);
+//        x.view().inject(this);
+//        initView();
+//        initEvent();
+//    }
 
     @Override
     protected void onResume() {

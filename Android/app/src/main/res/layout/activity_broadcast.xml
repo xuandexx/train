@@ -6,7 +6,7 @@
     tools:context=".ui.BroadcastActivity">
 
 
-    <com.jiaozi.vedio.MyJzvdStd
+    <cn.jzvd.demo.CustomJzvd.MyJzvdStd
         android:id="@+id/myJzvdStd"
         android:layout_width="match_parent"
         android:layout_height="200dp" />

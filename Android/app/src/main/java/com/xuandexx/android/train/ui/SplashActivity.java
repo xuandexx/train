@@ -11,7 +11,7 @@ import com.xuandexx.android.train.R;
  */
 public class SplashActivity extends BaseActivity {
 
-    private static final int sleepTime = 2000;
+    private static final int sleepTime = 20;
 
     @Override
     protected void onCreate(Bundle arg0) {

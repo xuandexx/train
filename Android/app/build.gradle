@@ -11,10 +11,24 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+//    signingConfigs {
+//        releaseConfig {
+//            storeFile file("jzvd-keystore")
+//            storePassword "123456"
+//            keyAlias "key0"
+//            keyPassword "123456"
+//        }
+//    }
     buildTypes {
+        //        debug {//测试时会用到
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.releaseConfig
+//        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.releaseConfig
         }
     }
     android {
@@ -22,55 +36,71 @@ android {
             sourceCompatibility 1.8
             targetCompatibility 1.8
         }
+        lintOptions {
+            abortOnError false
+        }
     }
-}
 
-repositories {
-    mavenCentral()
-}
+    repositories {
+        mavenCentral()
+    }
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'org.xutils:xutils:3.3.36'  //xUtils3
-    implementation 'org.projectlombok:lombok:1.18.8'//添加lombok依赖
-    implementation 'com.google.android.material:material:1.1.0'
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'//java注解
-    implementation 'com.android.support:recyclerview-v7:29.0.0'//support-v7
-    compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'androidx.appcompat:appcompat:1.1.0'
+        implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+        implementation 'org.xutils:xutils:3.3.36'  //xUtils3
+        implementation 'org.projectlombok:lombok:1.18.8'//添加lombok依赖
+        implementation 'com.google.android.material:material:1.1.0'
+        annotationProcessor 'org.projectlombok:lombok:1.18.8'//java注解
+        compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+        implementation 'de.hdodenhof:circleimageview:2.1.0'
+        implementation project(':jiaozivideoplayer')
+        implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+        implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.4'
+        implementation 'com.danikula:videocache:2.7.0'
+        implementation 'com.github.bumptech.glide:glide:4.7.1'
+        implementation 'com.google.android.exoplayer:exoplayer:2.9.1'
 
-    implementation 'com.sackcentury:shinebutton:0.1.6'
-    implementation 'org.greenrobot:eventbus:3.0.0'
-    implementation 'cn.jzvd:jiaozivideoplayer:7.2.4'//饺子视频插件
+        implementation 'com.android.support:appcompat-v7:29.0.0'
+        implementation 'com.android.support:recyclerview-v7:29.0.0'
 
-    implementation 'com.github.clans:fab:1.6.4'
-    implementation 'com.huxq17.android:SwipeCardsView:1.3.5'
-    implementation 'com.contrarywind:Android-PickerView:3.2.5'
-    implementation 'com.zaaach:toprightmenu:1.0'
-    implementation 'jp.wasabeef:blurry:2.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
-    implementation 'com.balysv:material-ripple:1.0.2'
-    implementation 'com.zhy:base-rvadapter:3.0.3'
-    implementation 'com.zhy:okhttputils:2.6.2'
-    implementation 'com.orhanobut:logger:2.1.1'
-    implementation 'cn.bingoogolapple:bga-banner:2.1.7@aar'
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
-    implementation 'org.greenrobot:eventbus:3.0.0'
-    implementation 'com.sackcentury:shinebutton:0.1.9'
-    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
-    implementation 'skin.support:flycotablayout:2.1.2'
-    implementation 'org.jsoup:jsoup:1.10.3'
-    implementation 'com.google.code.gson:gson:2.7'
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
-    implementation 'com.jude:rollviewpager:1.2.9'
-    implementation 'com.sunfusheng:marqueeview:1.2.0'
-    implementation 'com.bm.photoview:library:1.4.1'
-    implementation 'com.zzhoujay.richtext:richtext:2.5.2'
-    implementation 'com.wang.avi:library:2.1.3'
-    implementation 'com.shuyu:GSYVideoPlayer:2.0.4'
-    testCompile 'junit:junit:4.12'
+        implementation 'com.sackcentury:shinebutton:0.1.6'
+        implementation 'org.greenrobot:eventbus:3.0.0'
 
+        implementation 'com.github.clans:fab:1.6.4'
+        implementation 'com.huxq17.android:SwipeCardsView:1.3.5'
+        implementation 'com.contrarywind:Android-PickerView:3.2.5'
+        implementation 'com.zaaach:toprightmenu:1.0'
+        implementation 'jp.wasabeef:blurry:2.1.1'
+        implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+        implementation 'com.balysv:material-ripple:1.0.2'
+        implementation 'com.zhy:base-rvadapter:3.0.3'
+        implementation 'com.zhy:okhttputils:2.6.2'
+        implementation 'com.orhanobut:logger:2.1.1'
+        implementation 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+        implementation 'com.github.bumptech.glide:glide:3.7.0'
+        implementation 'org.greenrobot:eventbus:3.0.0'
+        implementation 'com.sackcentury:shinebutton:0.1.9'
+        implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+        implementation 'skin.support:flycotablayout:2.1.2'
+        implementation 'org.jsoup:jsoup:1.10.3'
+        implementation 'com.google.code.gson:gson:2.7'
+        implementation 'de.hdodenhof:circleimageview:2.1.0'
+        implementation 'com.jude:rollviewpager:1.2.9'
+        implementation 'com.sunfusheng:marqueeview:1.2.0'
+        implementation 'com.bm.photoview:library:1.4.1'
+        implementation 'com.zzhoujay.richtext:richtext:2.5.2'
+        implementation 'com.wang.avi:library:2.1.3'
+        implementation 'com.shuyu:GSYVideoPlayer:2.0.4'
+        testCompile 'junit:junit:4.12'
+    }
 
+    // 项目中依赖的第三方库越来越多时，有可能会出现两个依赖库中存在同一个（名称）文件 如果这样，Gradle在打包时就会提示错误（警告）。那么就可以根据提示，然后使用以下方法将重复的文件剔除
+    packagingOptions {
+        // pickFirsts:当出现重复文件，会使用第一个匹配的文件打包进入apk
+        pickFirst 'lib/armeabi-v7a/libijkplayer.so'
+        pickFirst 'lib/armeabi-v7a/libijkffmpeg.so'
+        pickFirst 'lib/armeabi-v7a/libijksdl.so'
+    }
 }
