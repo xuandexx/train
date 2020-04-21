@@ -1,5 +1,6 @@
 package com.xuandexx.train.api.bo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
  * 具体课程
  */
 @Data
+@AllArgsConstructor
 public class Course {
 
     /**

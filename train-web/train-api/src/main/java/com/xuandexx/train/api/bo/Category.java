@@ -1,5 +1,6 @@
 package com.xuandexx.train.api.bo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.List;
@@ -8,7 +9,8 @@ import java.util.List;
  * 主页课程展示:课程分类,课程名列表
  */
 @Data
-public class CourseAll {
+@AllArgsConstructor
+public class Category {
 
 
     /**
@@ -19,15 +21,10 @@ public class CourseAll {
     /**
      * 课程分类
      */
-    private String courseCatalog;
-
-    /**
-     * 课程封面
-     */
-    private String uri;
+    private String catalog;
 
     /**
      * 课程名列表
      */
-    private List<String> courseName;
+    private List<Course> courses;
 }

@@ -1,8 +1,12 @@
 package com.xuandexx.train.api.bo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
+
 /**
  * 课时分类
  */
+@Data
 public class Lesson {
     /**
      * 课时编号
@@ -23,4 +27,10 @@ public class Lesson {
      * 课程视频地址
      */
     private String uri;
+
+    public Lesson(Long lessonId, String detail, String uri) {
+        this.lessonId = lessonId;
+        this.detail = detail;
+        this.uri = uri;
+    }
 }
