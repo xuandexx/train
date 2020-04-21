@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="A">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/CourseAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Lesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +71,10 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuandexx.train.api.bo" />
+      <recent name="com.xuandexx.train.api.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\train\train-web\ks-parent\ks-common\src\main\java\com\ksshop\domain" />
     </key>
@@ -117,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587452515933</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A">
+      <created>1587453158195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587453158195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,22 +159,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1587439919184" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1587452410621">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1587456390755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587452410621" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1587452410620">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1587456390755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587452410620" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1587452410620">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1587456390755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587452410620" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1587452410621">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1587456390755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587452410621" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
     <state x="810" y="355" key="Maven.ArtifactSearchDialog" timestamp="1587451793053">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -189,5 +203,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="654" y="360" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587451325833" />
+    <state x="943" y="315" key="search.everywhere.popup" timestamp="1587456614433">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587456614433" />
   </component>
 </project>
