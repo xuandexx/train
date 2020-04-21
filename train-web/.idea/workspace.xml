@@ -19,20 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="A">
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/CourseAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Lesson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/po/User.java" afterDir="false" />
+    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="AA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ks-parent/ks-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ks-parent/ks-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ks-parent/ks-common/src/main/java/com/ksshop/domain/KsResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ks-parent/ks-common/src/main/java/com/ksshop/domain/KsResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ks-parent/ks-common/target/classes/com/ksshop/domain/KsResp.class" beforeDir="false" afterPath="$PROJECT_DIR$/ks-parent/ks-common/target/classes/com/ksshop/domain/KsResp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Advertise.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Advertise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,7 +69,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -131,7 +132,28 @@
       <option name="project" value="LOCAL" />
       <updated>1587453158195</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="AA">
+      <created>1587458985261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587458985261</updated>
+    </task>
+    <task id="LOCAL-00005" summary="AA">
+      <created>1587459020743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587459020743</updated>
+    </task>
+    <task id="LOCAL-00006" summary="AA">
+      <created>1587460825529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587460825529</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,33 +170,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A" />
-    <option name="LAST_COMMIT_MESSAGE" value="A" />
+    <MESSAGE value="AA" />
+    <option name="LAST_COMMIT_MESSAGE" value="AA" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1587451457808">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1587451457808" />
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1587460043169">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1587460043169" />
     <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1587439919184">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1587439919184" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1587456390755">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1587461263050">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1587456390755">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587461263050" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1587461263050">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1587456390755">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587461263050" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1587461263050">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1587456390755">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587461263050" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1587461263050">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587456390755" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587461263050" />
+    <state x="860" y="434" key="IDE.errors.dialog" timestamp="1587459155802">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="860" y="434" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587459155802" />
     <state x="810" y="355" key="Maven.ArtifactSearchDialog" timestamp="1587451793053">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -183,10 +214,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="920" y="403" key="NewModule_or_Project.wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587439925385" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1587453112918">
+    <state x="781" y="344" key="SettingsEditor" timestamp="1587461041519">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587453112918" />
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587461041519" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587452517503">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -195,6 +226,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1079" y="477" key="chooseDestDirectoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587451077967" />
+    <state x="1051" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587460462693">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587460462693" />
     <state x="982" y="301" width="596" height="798" key="find.popup" timestamp="1587439804815">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

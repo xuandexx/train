@@ -1,6 +1,7 @@
 package com.xuandexx.train.api.controller;
 
 import com.ksshop.domain.KsResp;
+import com.xuandexx.train.api.bo.Advertise;
 import com.xuandexx.train.api.bo.Category;
 import com.xuandexx.train.api.bo.Course;
 import com.xuandexx.train.api.bo.Lesson;
@@ -15,12 +16,22 @@ public class ContentController {
 
 
     @GetMapping("search")
-    public KsResp<String> search() {
+    public KsResp<String> search(String keyword) {
         return KsResp.success(null);
     }
 
+
+    @GetMapping("advertiseList")
+    public KsResp<List<Advertise>> advertiseList() {
+        //课时
+        Advertise advertise = new Advertise(1L, "bilibili图片", "www.baidu.com", "www.baidu.com", 1);
+        List<Advertise> advertises = new ArrayList<>();
+        advertises.add(advertise);
+        return KsResp.success(advertises);
+    }
+
     @GetMapping("courseList")
-    public KsResp<List<Category>> list() {
+    public KsResp<List<Category>> courseList() {
         //课时
         Lesson lesson = new Lesson(1L, "初级入门第一课", "www.baidu.com");
         List<Lesson> lessons = new ArrayList<>();
@@ -35,15 +46,4 @@ public class ContentController {
         categories.add(category);
         return KsResp.success(categories);
     }
-
-    @PutMapping("course/{id}")
-    public KsResp<?> update(@PathVariable Long id) {
-        return KsResp.success(1);
-    }
-
-    @RequestMapping("validate")
-    public KsResp<String> validate() {
-        return KsResp.success(null);
-    }
-
 }

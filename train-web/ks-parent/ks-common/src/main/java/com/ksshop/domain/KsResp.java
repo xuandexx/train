@@ -1,5 +1,6 @@
 package com.ksshop.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class KsResp<T> {
 
     private Integer code;
@@ -16,11 +18,11 @@ public class KsResp<T> {
     private T data;
 
     public static <T> KsResp<T> fail(Integer code, String msg) {
-        return new KsResp<T>(code, msg, null);
+        return new KsResp<>(code, msg, null);
     }
 
     public static <T> KsResp<T> success(T data) {
-        return new KsResp<T>(200, null, data);
+        return new KsResp<>(200, null, data);
     }
 
 }

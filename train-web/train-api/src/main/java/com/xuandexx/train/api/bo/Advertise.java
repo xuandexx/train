@@ -1,11 +1,13 @@
 package com.xuandexx.train.api.bo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
  * 首页广告
  */
 @Data
+@AllArgsConstructor
 public class Advertise {
 
     /**
