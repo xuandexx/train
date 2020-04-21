@@ -8,7 +8,10 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
+
+import org.xutils.x;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -17,13 +20,15 @@ import java.util.Map;
 /**
  * 基类
  */
-public abstract class BaseActivity extends FragmentActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     protected String TAG;
 
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
+        x.view().inject(this);
+        initEvent();
     }
 
     @Override

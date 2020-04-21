@@ -13,24 +13,17 @@
  */
 package com.xuandexx.android.train.ui;
 
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.xuandexx.android.train.R;
-import com.xuandexx.android.train.common.CommonUtils;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -65,38 +58,7 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
         initEvent();
-        // if user changed, clear the password
-        usernameEditText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                passwordEditText.setText(null);
-            }
 
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE || ((event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))) {
-                    login(null);
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        });
-
-        usernameEditText.setHint("请输入用户名");
-
-        serviceCheckTV.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
 
     }
 
@@ -108,37 +70,37 @@ public class LoginActivity extends BaseActivity {
     public void login(View view) {
         startActivity(MainActivity.class);
         finish();
-        if (!CommonUtils.isNetWorkConnected(this)) {
-            Toast.makeText(this, R.string.network_isnot_available, Toast.LENGTH_SHORT).show();
-            return;
-        }
-        String currentUsername = usernameEditText.getText().toString().trim();
-        String currentPassword = passwordEditText.getText().toString().trim();
-        if (TextUtils.isEmpty(currentUsername)) {
-            Toast.makeText(this, R.string.User_name_cannot_be_empty, Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(currentPassword)) {
-            Toast.makeText(this, R.string.Password_cannot_be_empty, Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        progressShow = true;
-        final ProgressDialog pd = new ProgressDialog(LoginActivity.this);
-        pd.setCanceledOnTouchOutside(false);
-        pd.setOnCancelListener(new OnCancelListener() {
-
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                Log.d(TAG, "EMClient.getInstance().onCancel");
-                progressShow = false;
-            }
-        });
-        pd.setMessage(getString(R.string.Is_landing));
-        pd.show();
-        final long start = System.currentTimeMillis();
-        // call login method
-        Log.d(TAG, "EMClient.getInstance().login");
+//        if (!CommonUtils.isNetWorkConnected(this)) {
+//            Toast.makeText(this, R.string.network_isnot_available, Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+//        String currentUsername = usernameEditText.getText().toString().trim();
+//        String currentPassword = passwordEditText.getText().toString().trim();
+//        if (TextUtils.isEmpty(currentUsername)) {
+//            Toast.makeText(this, R.string.User_name_cannot_be_empty, Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+//        if (TextUtils.isEmpty(currentPassword)) {
+//            Toast.makeText(this, R.string.Password_cannot_be_empty, Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+//
+//        progressShow = true;
+//        final ProgressDialog pd = new ProgressDialog(LoginActivity.this);
+//        pd.setCanceledOnTouchOutside(false);
+//        pd.setOnCancelListener(new OnCancelListener() {
+//
+//            @Override
+//            public void onCancel(DialogInterface dialog) {
+//                Log.d(TAG, "EMClient.getInstance().onCancel");
+//                progressShow = false;
+//            }
+//        });
+//        pd.setMessage(getString(R.string.Is_landing));
+//        pd.show();
+//        final long start = System.currentTimeMillis();
+//        // call login method
+//        Log.d(TAG, "EMClient.getInstance().login");
 //        EMClient.getInstance().login(currentUsername, currentPassword, new EMCallBack() {
 //
 //            @Override
@@ -193,14 +155,14 @@ public class LoginActivity extends BaseActivity {
 //        });
     }
 
-//    /**
-//     * register
-//     *
-//     * @param view
-//     */
-//    public void register(View view) {
-//        startActivityForResult(new Intent(this, RegisterActivity.class), 0);
-//    }
+    /**
+     * register
+     *
+     * @param view
+     */
+    public void register(View view) {
+        startActivity(BroadcastActivity.class);
+    }
 
     @Override
     protected void onResume() {
@@ -217,6 +179,39 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void initEvent() {
+
+        // if user changed, clear the password
+        usernameEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                passwordEditText.setText(null);
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE || ((event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))) {
+                    login(null);
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+
+        usernameEditText.setHint("请输入用户名");
+
+        serviceCheckTV.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
 
     }
 }

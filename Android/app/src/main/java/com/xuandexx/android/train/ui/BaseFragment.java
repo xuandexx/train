@@ -27,7 +27,7 @@ import java.util.Map;
 /**
  * contact list
  */
-public abstract class BaseFragment<showDialog> extends Fragment {
+public abstract class BaseFragment extends Fragment {
     //Log日志标记
     protected String TAG;
 
