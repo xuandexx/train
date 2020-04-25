@@ -31,11 +31,6 @@ public class SplashActivity extends BaseActivity {
     }
 
     @Override
-    protected void initView() {
-
-    }
-
-    @Override
     protected void initEvent() {
         Thread thread = new Thread(new Runnable() {
             @Override

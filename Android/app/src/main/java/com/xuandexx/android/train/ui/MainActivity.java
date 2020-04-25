@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -25,6 +26,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.xuandexx.android.train.R;
 
 import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 @ContentView(R.layout.em_activity_main)
@@ -34,7 +36,7 @@ public class MainActivity extends BaseActivity {
 
     private Button[] mTabs;
 
-    private ContentFragment contentFragment;
+    private ContentFragment contentFragment;//内容管理
 
     private HistoryFragment historyFragment;
 
@@ -42,24 +44,24 @@ public class MainActivity extends BaseActivity {
 
     private Fragment[] fragments;
 
-
     private int index;
     private int currentTabIndex;
+
     public boolean isConflict = false;
 
+    @ViewInject(R.id.top_back)
+    private TextView topBack;
+    @ViewInject(R.id.top_title)
+    private TextView topTitle;
+    @ViewInject(R.id.top_back)
+    private TextView topConfirm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
         initEvent();
-//        startActivity(new Intent(this, LoginActivity.class));
-        //make sure activity will not in background if user is logged into another device or removed
-//        if (BaseApplication.getUserToken() == null) {
-//            this.finish();
-//            startActivity(LoginActivity.class);
-//            return;
-//        }
+
         if (savedInstanceState != null) {
             loge("get fragments from saveInstanceState");
             contentFragment = (ContentFragment) getSupportFragmentManager().getFragment(savedInstanceState, ContentFragment.class.getSimpleName());
@@ -78,21 +80,22 @@ public class MainActivity extends BaseActivity {
         // 获取华为 HMS 推送 token
     }
 
-    @Override
-    protected void initView() {
-        
-    }
 
     @Override
     protected void initEvent() {
+        topTitle.setText(R.string.context);
+
         Log.d(TAG, "initView");
         mTabs = new Button[3];
-        mTabs[0] = (Button) findViewById(R.id.btn_conversation);
-        mTabs[1] = (Button) findViewById(R.id.btn_address_list);
-        mTabs[2] = (Button) findViewById(R.id.btn_setting);
+        mTabs[0] = findViewById(R.id.btn_conversation);
+        mTabs[1] = findViewById(R.id.btn_address_list);
+        mTabs[2] = findViewById(R.id.btn_setting);
         // select first tab
         mTabs[0].setSelected(true);
+
+
     }
+
 
     /**
      * on tab clicked

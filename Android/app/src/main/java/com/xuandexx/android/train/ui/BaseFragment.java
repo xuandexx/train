@@ -36,6 +36,14 @@ public abstract class BaseFragment extends Fragment {
 
     protected ProgressDialog pd;
 
+    protected Context thisContext;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        thisContext = getContext();
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,14 +57,18 @@ public abstract class BaseFragment extends Fragment {
 
 
     @Override
-    public void onStart() {
-        super.onStart();
-        inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        initView();
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
         initEvent();
     }
 
-    protected abstract void initView();
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+    }
+
 
     protected abstract void initEvent();
 

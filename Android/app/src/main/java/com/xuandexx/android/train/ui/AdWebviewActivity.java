@@ -65,14 +65,10 @@ public class AdWebviewActivity extends BaseActivity {
     }
 
     @Override
-    protected void initView() {
+    protected void initEvent() {
         url = getIntent().getExtras().getString("bannerLink");
         filename = url.substring(url.lastIndexOf("/") + 1);
         System.out.println("filename--->" + filename);
-    }
-
-    @Override
-    protected void initEvent() {
 //		biliWebView = (WebView)findViewById(R.id.BiliWebView);
 //		progressBar = (ProgressBar) findViewById(R.id.blogContentPro);
 //		reLoadImageView = (ImageView) findViewById(R.id.reLoadImage);

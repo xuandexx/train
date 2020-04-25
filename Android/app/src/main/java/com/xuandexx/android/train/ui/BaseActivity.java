@@ -9,9 +9,6 @@ import android.widget.Toast;
 
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
-
-import org.xutils.x;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -122,11 +119,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void logi(String msg) {
         Log.i(TAG, msg);
     }
-
-    /**
-     * 初始化控件
-     */
-    protected abstract void initView();
 
     /**
      * 初始化事件

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">Train</string>
     <string name="my_order">我的订单</string>
     <string name="my_step">我的学习</string>
     <string name="about_us">关于我们</string>
     <string name="title_activity_broadcast">BroadcastActivity</string>
+    <string name="context">Courses</string>
 </resources>

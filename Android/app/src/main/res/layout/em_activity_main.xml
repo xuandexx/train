@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/common_bg">
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
     <LinearLayout
         android:id="@+id/main_bottom"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:layout_alignParentBottom="true"
         android:background="@color/bottom_bar_normal_bg"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         tools:ignore="DisableBaselineAlignment">
-
 
         <Button
             android:id="@+id/btn_conversation"
@@ -32,7 +39,6 @@
             android:textColor="@color/em_main_botton_text_color"
             android:textSize="12sp" />
 
-
         <Button
             android:id="@+id/btn_address_list"
             android:layout_width="0dp"
@@ -47,7 +53,6 @@
             android:text="@string/history"
             android:textColor="@color/em_main_botton_text_color"
             android:textSize="12sp" />
-
 
         <Button
             android:id="@+id/btn_setting"
@@ -65,10 +70,5 @@
             android:textSize="12sp" />
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/main_bottom" />
 
-</RelativeLayout>
+</LinearLayout>
