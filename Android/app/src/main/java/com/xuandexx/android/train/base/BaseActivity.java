@@ -1,4 +1,4 @@
-package com.xuandexx.android.train.ui;
+package com.xuandexx.android.train.base;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.xutils.x;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,13 +23,12 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected String TAG;
 
-//    @Override
-//    protected void onCreate(Bundle arg0) {
-//        super.onCreate(arg0);
-//        x.view().inject(this);
-//        initView();
-//        initEvent();
-//    }
+    @Override
+    protected void onCreate(Bundle arg0) {
+        super.onCreate(arg0);
+        x.view().inject(this);
+        initEvent();
+    }
 
     @Override
     protected void onResume() {

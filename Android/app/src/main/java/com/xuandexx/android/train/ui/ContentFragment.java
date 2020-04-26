@@ -24,6 +24,7 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.xuandexx.android.train.R;
 import com.xuandexx.android.train.adapter.HomePageADAdapter;
+import com.xuandexx.android.train.base.BaseActivity;
 import com.xuandexx.android.train.model.BannerItem;
 import com.xuandexx.android.train.model.VideoItem;
 

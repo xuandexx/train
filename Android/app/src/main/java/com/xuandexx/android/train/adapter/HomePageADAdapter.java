@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.xuandexx.android.train.R;
 import com.xuandexx.android.train.model.BannerItem;
 import com.xuandexx.android.train.ui.AdWebviewActivity;
-import com.xuandexx.android.train.ui.BaseActivity;
+import com.xuandexx.android.train.base.BaseActivity;
 
 import java.util.List;
 

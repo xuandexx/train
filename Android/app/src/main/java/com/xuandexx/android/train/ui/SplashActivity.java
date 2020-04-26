@@ -5,6 +5,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.RelativeLayout;
 
 import com.xuandexx.android.train.R;
+import com.xuandexx.android.train.base.BaseActivity;
 
 /**
  * 开屏页

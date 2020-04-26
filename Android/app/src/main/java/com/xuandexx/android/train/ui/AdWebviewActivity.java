@@ -1,15 +1,13 @@
 package com.xuandexx.android.train.ui;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.view.Window;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import com.xuandexx.android.train.base.BaseApplication;
+import com.xuandexx.android.train.base.BaseActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -44,7 +42,6 @@ public class AdWebviewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);// 无标题
         super.onCreate(savedInstanceState);
 //		setContentView(R.layout.bili_webview);
 //		initView();
@@ -90,10 +87,6 @@ public class AdWebviewActivity extends BaseActivity {
 //				finish();
 //			}
 //		});
-//
 //		commentBtn = (ImageView) findViewById(R.id.comment);
-
     }
-
-
 }

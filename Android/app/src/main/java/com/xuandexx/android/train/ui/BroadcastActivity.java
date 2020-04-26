@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.bumptech.glide.Glide;
 import com.xuandexx.android.train.R;
+import com.xuandexx.android.train.base.BaseActivity;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
