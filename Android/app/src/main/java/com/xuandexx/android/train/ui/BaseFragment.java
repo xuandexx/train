@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
@@ -36,42 +37,54 @@ public abstract class BaseFragment extends Fragment {
 
     protected ProgressDialog pd;
 
-    protected Context thisContext;
+    protected Activity activity;
 
+    protected abstract void initEvent();
+
+    //生命周期1:
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+    }
+
+    //生命周期2:
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        thisContext = getContext();
+        activity = getActivity();
     }
 
+    //生命周期3:
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return x.view().inject(this, inflater, container);
     }
 
+    //生命周期4:
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    //生命周期5:
+    @Override
+    public void onStart() {
+        super.onStart();
+        inputMethodManager = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+        initEvent();
+    }
+
+    //生命周期6:(Fragment活动中)
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
     @Override
     public void onViewCreated(View v, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(v, savedInstanceState);
     }
-
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        initEvent();
-    }
-
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-    }
-
-
-    protected abstract void initEvent();
-
 
     /**
      * 功能描述:简单地 Activity 的跳转(不携带任何数据)
@@ -124,7 +137,7 @@ public abstract class BaseFragment extends Fragment {
      * @param cls    目标 Activity 实例
      * @param object 实体类
      */
-    protected void startActivity(Class<? extends Activity> cls, String key, Parcelable object) {
+    protected void startActivityForResult(Class<? extends Activity> cls, String key, Parcelable object) {
         Intent intent = new Intent(this.getActivity(), cls);
         Bundle bundle = new Bundle();
         bundle.putParcelable(key, object);
@@ -132,25 +145,20 @@ public abstract class BaseFragment extends Fragment {
         startActivity(intent);
     }
 
-
-    protected void toast(String msg) {
-        Toast.makeText(this.getActivity(), msg, Toast.LENGTH_SHORT).show();
-    }
-
     protected void toast(@StringRes int resId) {
-        Toast.makeText(this.getActivity(), resId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this.getActivity(), activity.getString(resId), Toast.LENGTH_SHORT).show();
     }
 
-    protected void loge(String msg) {
-        Log.e(TAG, msg);
+    protected void loge(@StringRes int resId) {
+        Log.e(TAG, activity.getString(resId));
     }
 
-    protected void logi(String msg) {
-        Log.i(TAG, msg);
+    protected void logi(@StringRes int resId) {
+        Log.i(TAG, activity.getString(resId));
     }
 
     protected <T extends View> T findViewById(int id) {
-        return this.getActivity().findViewById(id);
+        return getActivity().findViewById(id);
     }
 
     protected void hideSoftKeyboard() {
@@ -162,14 +170,14 @@ public abstract class BaseFragment extends Fragment {
     }
 
     protected void showDialog(String msg) {
-        pd = new ProgressDialog(this.getActivity());
+        pd = new ProgressDialog(activity);
         pd.setMessage(msg);
         pd.setCanceledOnTouchOutside(false);
         pd.show();
     }
 
-
     protected void dismissDialog() {
-        pd.dismiss();
+        if (pd.isShowing())
+            pd.dismiss();
     }
 }

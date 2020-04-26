@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/common_bg"
+    android:background="@android:color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -11,80 +11,63 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#ededed">
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/padding_search_bar"
+            android:paddingTop="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="7dp">
 
-            <RelativeLayout
+            <EditText
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ease_seabar_input"
+                android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColorHint="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/search_clear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingLeft="@dimen/padding_search_bar"
-                android:paddingTop="7dp"
-                android:paddingRight="7dp"
-                android:paddingBottom="7dp">
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:src="@drawable/ease_search_clear"
+                android:visibility="invisible" />
+        </RelativeLayout>
 
-                <EditText
-                    android:id="@+id/query"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="4dp"
-                    android:background="@drawable/ease_seabar_input"
-                    android:drawableLeft="@drawable/ease_search_bar_icon_normal"
-                    android:hint="@string/search"
-                    android:imeOptions="actionSearch"
-                    android:paddingLeft="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:singleLine="true"
-                    android:textColorHint="@android:color/white"
-                    android:textSize="16sp" />
 
-                <ImageButton
-                    android:id="@+id/search_clear"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="3dp"
-                    android:background="@android:color/transparent"
-                    android:padding="6dp"
-                    android:src="@drawable/ease_search_clear"
-                    android:visibility="invisible" />
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/tv_cancel"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                android:gravity="center"
-                android:paddingLeft="6dp"
-                android:paddingRight="8dp"
-                android:text="@string/history"
-                android:textColor="@color/holo_green_light"
-                android:textSize="15sp" />
-        </LinearLayout>
-
-        <include layout="@layout/banner" />
-
+        <include
+            android:id="@+id/banner"
+            layout="@layout/banner" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/carlifeFargment_button1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:drawableTop="@drawable/ic_cate_live"
-                android:gravity="center"
+                android:drawableTop="@drawable/piano_00"
                 android:text="栏目" />
 
 
@@ -93,7 +76,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:drawableTop="@drawable/ic_cate_movie"
+                android:drawableTop="@drawable/piano_01"
                 android:gravity="center"
                 android:text="栏目" />
 
@@ -102,17 +85,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:drawableTop="@drawable/ic_cate_music"
+                android:drawableTop="@drawable/piano_02"
                 android:gravity="center"
                 android:text="栏目" />
-
 
             <Button
                 android:id="@+id/carlifeFargment_button4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:drawableTop="@drawable/ic_cate_ranks"
+                android:drawableTop="@drawable/piano_03"
                 android:gravity="center"
                 android:text="栏目" />
         </LinearLayout>
@@ -175,7 +157,7 @@
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_marginTop="5dip"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black_alpha"
+                        android:background="@color/btn_answer_pressed"
                         android:gravity="center"
                         android:padding="3dp">
 
@@ -235,7 +217,6 @@
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_marginTop="5dip"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black_alpha"
                         android:gravity="center"
                         android:padding="3dp">
 
@@ -295,7 +276,7 @@
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_marginTop="5dip"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black_alpha"
+                        android:background="@color/black_alpha2"
                         android:gravity="center"
                         android:padding="3dp">
 
@@ -355,7 +336,6 @@
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_marginTop="5dip"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black_alpha"
                         android:gravity="center"
                         android:padding="3dp">
 

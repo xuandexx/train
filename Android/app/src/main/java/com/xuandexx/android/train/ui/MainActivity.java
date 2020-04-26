@@ -83,8 +83,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initEvent() {
-        topTitle.setText(R.string.context);
-
+        topTitle.setText(R.string.course);
         Log.d(TAG, "initView");
         mTabs = new Button[3];
         mTabs[0] = findViewById(R.id.btn_conversation);
@@ -106,12 +105,15 @@ public class MainActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.btn_conversation:
                 index = 0;
+                topTitle.setText(R.string.course);
                 break;
             case R.id.btn_address_list:
                 index = 1;
+                topTitle.setText(R.string.history);
                 break;
             case R.id.btn_setting:
                 index = 2;
+                topTitle.setText(R.string.setting);
                 break;
         }
         if (currentTabIndex != index) {
