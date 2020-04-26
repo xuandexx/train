@@ -23,17 +23,9 @@ import org.xutils.x;
  */
 public class BaseApplication extends Application {
 
-    public static Context applicationContext;
-
-    private static BaseApplication instance;
-
-    private static String userToken = null;
-
     @Override
     public void onCreate() {
         super.onCreate();
-        applicationContext = this;
-        instance = this;
         x.Ext.init(this);
         x.Ext.setDebug(true); //输出debug日志，开启会影响性能
     }
@@ -41,12 +33,5 @@ public class BaseApplication extends Application {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-    }
-
-    public static String getUserToken() {
-        if (userToken == null) {
-            userToken = "";
-        }
-        return userToken;
     }
 }
