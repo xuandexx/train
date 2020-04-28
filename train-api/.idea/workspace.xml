@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="AA">
+      <change afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/adapter/CourseAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/adapter/CourseListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/model/CourseCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/item_course_collection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/item_course_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/TrainWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/bo/Broadcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/controller/UserAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/HeyopetApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/ActiverUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/DataGridView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/KSResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/QiniuUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/TreeNodeBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/VariableName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/common/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/component/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/config/InternationalWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/CacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/CacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/LoginfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/a/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/authority/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/customer/UserCustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/item/BusItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/system/BasicInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/system/LogInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/system/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/back/webinfo/WebBasicInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/controller/util/QiniuUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusInport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusOutport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusSales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/BusSalesback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysLoginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysRolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysRoleUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/UserCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/domain/WebBasicInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/filter/KSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/listener/KSListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusCustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusCustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusGoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusGoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusInportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusInportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusOutportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusOutportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusProviderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusProviderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusSalesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusSalesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusSalesbackMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/BusSalesbackMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysLoginfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysLoginfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysNoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysRolePermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysRolePermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysRoleUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysRoleUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/SysUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/UserCustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/UserCustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/WebBasicInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/mapper/WebBasicInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusCustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusGoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusInportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusOutportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusProviderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusSalesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/BusSalesbackServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysLoginfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysNoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysRolePermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysRoleUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/SysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/UserCustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/service/WebBasicInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/util/Captcha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/util/EnumUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/util/PinyinUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/util/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/BusItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/DeptVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/LogInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/MenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/NoticeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/PermissionVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/RoleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/UserCustomerVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/WebBasicInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/ksshop/heyopet/vo/util/MenuVoBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/xuandexx/train/web/TrainWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/xuandexx/train/web/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/java/com/xuandexx/train/web/controller/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/3317673_heyopet.com.pfx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/pfx-password.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/.well-known/pki-validation/fileauth.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/3317673_heyopet.com.pfx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/css/public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/i18n/login.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/i18n/login_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/i18n/login_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/alipay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/code.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/face.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/fly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/git.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/layui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/mayun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/userface1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/userface2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/userface3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/userface4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/userface5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/images/wechat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/js/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/js/bodyTab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/js/cache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/js/cacheUserInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/address.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/images.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/linkList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/linkLogo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/logs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/navs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/navs2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/newsImg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/newsList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/systemParameter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/userGrade.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/userList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/json/userface.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dist/dtree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/dtree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/dtree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/font/dtreefont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/font/dtreefont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/font/dtreefont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/font/dtreefont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/font/dtreefont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/font/icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree/开发者日志.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/layui_ext/dtree1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/doc/addressDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/doc/bodyTabDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/doc/navDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/icon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/img/images.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/img/images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/login/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/login/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/news/newsAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/news/newsAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/news/newsAdd2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/news/newsList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/news/newsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/basicParameter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/basicParameter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/linkList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/linkList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/linksAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/logs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/systemSetting/logs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/changePwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userGrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/page/user/userList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/chocolat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/easy-responsive-tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/css/w3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/a1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/move-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/images/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/SmoothScroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/easy-responsive-tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/jquery.chocolat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/jquery.textFx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/jquery.transit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/resources/stage/js/move-top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/static/stage/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/deptLeft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/deptManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/deptRight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/menuLeft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/menuManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/menuRight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/authority/roleManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/customer/customerInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/item/itemManage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/doc/addressDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/doc/bodyTabDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/doc/navDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/img/images.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/img/images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/news/newsAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/news/newsAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/news/newsList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/news/newsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/basicParameter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/basicParameter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/linkList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/linkList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/linksAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/logs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/systemSetting/logs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/changePwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userGrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/page/user/userList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/system/basicInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/system/cacheManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/system/logInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/system/notice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/user/userManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/back/webinfo/basicInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/1-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/1-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/1-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/1-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/1-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/2-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/2-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/2-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/2-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/2-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/3-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/3-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/3-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/3-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/3-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/4-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/4-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/4-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/4-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/at/4-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/brandShow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/guide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/liability.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/stage/typo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/main/resources/templates/up.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-web/src/test/java/com/xuandexx/train/web/TrainWebApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/base/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/ContentFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/ContentFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/util/UIUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/banner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/banner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/em_activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/em_activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/em_activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/em_activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/em_chat_neterror_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/em_chat_neterror_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_mine.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_mine.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/layout_head.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/layout_head.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ks-parent/ks-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ks-parent/ks-common/src/main/java/com/ksshop/common/domian/KsResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ks-parent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="C:\resp\maven.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aphlAF2J0petV92gScIWvHDV1k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/train-web/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuandexx.train.web.controller" />
+      <recent name="com.xuandexx.train.api.controller" />
+      <recent name="com.xuandexx.train.api.bo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\train\train-web\train-web\src\main\resources" />
+      <recent name="D:\project\train\train-web\train-web\src\main\java" />
+      <recent name="D:\project\train\train-web\ks-parent\ks-common\src\main\java\com\ksshop\domain" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuandexx.train.api.DemoApplication" />
+      <module name="train-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuandexx.train.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="" />
+      <created>1587438590356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587438590356</updated>
+    </task>
+    <task id="LOCAL-00001" summary="A">
+      <created>1587438853696</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587438853696</updated>
+    </task>
+    <task id="LOCAL-00002" summary="A">
+      <created>1587452515933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587452515933</updated>
+    </task>
+    <task id="LOCAL-00003" summary="A">
+      <created>1587453158195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587453158195</updated>
+    </task>
+    <task id="LOCAL-00004" summary="AA">
+      <created>1587458985261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587458985261</updated>
+    </task>
+    <task id="LOCAL-00005" summary="AA">
+      <created>1587459020743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587459020743</updated>
+    </task>
+    <task id="LOCAL-00006" summary="AA">
+      <created>1587460825529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587460825529</updated>
+    </task>
+    <task id="LOCAL-00007" summary="AA">
+      <created>1587461302880</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587461302880</updated>
+    </task>
+    <task id="LOCAL-00008" summary="AA">
+      <created>1587605485468</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587605485469</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="A" />
+    <MESSAGE value="AA" />
+    <option name="LAST_COMMIT_MESSAGE" value="AA" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="760" y="274" key="#Project_Structure" timestamp="1587451457808">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1587451457808" />
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1587460043169">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1587460043169" />
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1587626830003">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1587626830003" />
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom" timestamp="1587536189429">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587536189429" />
+    <state width="1258" height="401" key="GridCell.Tab.0.center" timestamp="1587536189428">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587536189428" />
+    <state width="1258" height="401" key="GridCell.Tab.0.left" timestamp="1587536189428">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587536189428" />
+    <state width="1258" height="401" key="GridCell.Tab.0.right" timestamp="1587536189428">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587536189428" />
+    <state x="860" y="434" key="IDE.errors.dialog" timestamp="1587459155802">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="860" y="434" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587459155802" />
+    <state x="810" y="355" key="Maven.ArtifactSearchDialog" timestamp="1587977784644">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="810" y="355" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587977784644" />
+    <state x="920" y="403" key="NewModule_or_Project.wizard" timestamp="1587439925385">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="920" y="403" key="NewModule_or_Project.wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587439925385" />
+    <state x="781" y="344" key="SettingsEditor" timestamp="1587536896187">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587536896187" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587452517503">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1587452517503" />
+    <state x="1079" y="477" key="chooseDestDirectoryDialog" timestamp="1587451077967">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1079" y="477" key="chooseDestDirectoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587451077967" />
+    <state x="1051" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587460462693">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587460462693" />
+    <state x="982" y="301" width="596" height="798" key="find.popup" timestamp="1587439804815">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="982" y="301" width="596" height="798" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587439804815" />
+    <state x="654" y="360" key="new project wizard" timestamp="1587975327644">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="654" y="360" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587975327644" />
+    <state x="943" y="315" key="search.everywhere.popup" timestamp="1587456614433">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587456614433" />
+  </component>
+</project>
