@@ -28,7 +28,6 @@ import com.xuandexx.android.train.base.BaseActivity;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
-import org.xutils.x;
 
 @ContentView(R.layout.em_activity_main)
 public class MainActivity extends BaseActivity {
@@ -60,9 +59,8 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        x.view().inject(this);
-        initEvent();
-
+//        rootLayout = findViewById(R.id.rootLayout);
+//        rootLayout.setFitsSystemWindows(true);
         if (savedInstanceState != null) {
             loge("get fragments from saveInstanceState");
             contentFragment = (ContentFragment) getSupportFragmentManager().getFragment(savedInstanceState, ContentFragment.class.getSimpleName());

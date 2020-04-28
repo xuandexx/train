@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:background="@color/colorPrimary"
+    android:id="@+id/rootLayout"
     android:orientation="horizontal">
 
 
@@ -15,6 +16,11 @@
         android:textSize="20sp" />
 
     <TextView
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
         android:id="@+id/top_title"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -23,6 +29,10 @@
         android:gravity="center_vertical"
         android:textSize="20sp" />
 
+    <TextView
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/top_confirm"
@@ -30,7 +40,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_margin="1dip"
-        android:gravity="right|center_vertical"
+        android:gravity="center_vertical"
         android:textSize="20sp" />
 
 </LinearLayout>

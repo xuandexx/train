@@ -94,6 +94,7 @@ android {
         implementation 'com.wang.avi:library:2.1.3'
         implementation 'com.shuyu:GSYVideoPlayer:2.0.4'
         testImplementation 'junit:junit:4.12'
+        implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'//沉浸式头部
     }
 
     // 项目中依赖的第三方库越来越多时，有可能会出现两个依赖库中存在同一个（名称）文件 如果这样，Gradle在打包时就会提示错误（警告）。那么就可以根据提示，然后使用以下方法将重复的文件剔除
@@ -103,4 +104,8 @@ android {
         pickFirst 'lib/armeabi-v7a/libijkffmpeg.so'
         pickFirst 'lib/armeabi-v7a/libijksdl.so'
     }
+}
+
+dependencies {
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
 }

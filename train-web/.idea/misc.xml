@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/ks-parent/pom.xml" />
         <option value="$PROJECT_DIR$/train-api/pom.xml" />
+        <option value="$PROJECT_DIR$/train-web/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

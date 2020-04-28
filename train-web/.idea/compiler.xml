@@ -2,22 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="train-api" />
+        <module name="train-web" />
         <module name="ks-common" />
+        <module name="train-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="train-domain" target="1.8" />
-      <module name="train-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="train-api" options="-parameters" />
+      <module name="train-web" options="-parameters" />
     </option>
   </component>
 </project>

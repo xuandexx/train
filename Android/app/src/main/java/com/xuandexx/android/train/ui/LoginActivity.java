@@ -41,15 +41,6 @@ public class LoginActivity extends BaseActivity {
     TextView serviceCheckTV;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        x.view().inject(this);
-        initEvent();
-
-
-    }
-
     public void login(View view) {
         startActivity(MainActivity.class);
         finish();
@@ -158,7 +149,6 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void initEvent() {
-
         // if user changed, clear the password
         usernameEditText.addTextChangedListener(new TextWatcher() {
             @Override

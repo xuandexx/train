@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 
@@ -23,9 +22,11 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.xuandexx.android.train.R;
+import com.xuandexx.android.train.adapter.CourseListAdapter;
 import com.xuandexx.android.train.adapter.HomePageADAdapter;
 import com.xuandexx.android.train.base.BaseActivity;
 import com.xuandexx.android.train.model.BannerItem;
+import com.xuandexx.android.train.model.CourseCollection;
 import com.xuandexx.android.train.model.VideoItem;
 
 import org.json.JSONObject;
@@ -50,11 +51,7 @@ public class ContentFragment extends BaseFragment {
     private EditText query;
     @ViewInject(R.id.search_clear)
     private ImageButton clearSearch;
-
-    private TextView errorText;
-
-    private TextView searchView;
-
+    @ViewInject(R.id.listView)
     private ListView listView;
 
     //首页浮动广告
@@ -93,11 +90,13 @@ public class ContentFragment extends BaseFragment {
     @Override
     protected void initEvent() {
         TAG = this.getClass().getSimpleName();
-        searchView = (TextView) findViewById(R.id.tv_search);
-        listView = (ListView) findViewById(R.id.listview);
         adViewPager = (ViewPager) findViewById(R.id.vp);
-
         ArrayList<BannerItem> list = new ArrayList<BannerItem>();
+
+        List<CourseCollection> courseCollections = new ArrayList<>();
+        listView.setAdapter(new CourseListAdapter(activity, courseCollections));
+
+
         for (int i = 0; i < 6; i++) {
             BannerItem tempItem = new BannerItem();
             tempItem.setAd(false);
@@ -107,7 +106,6 @@ public class ContentFragment extends BaseFragment {
             list.add(tempItem);
         }
         list.get(0).setAd(true);
-
         imageViews = new ArrayList<ImageView>();
         options = new DisplayImageOptions.Builder()
                 .showStubImage(R.drawable.top_banner_android)
@@ -176,9 +174,6 @@ public class ContentFragment extends BaseFragment {
                 } else {
                     clearSearch.setVisibility(View.INVISIBLE);
                 }
-                searchView.setVisibility(View.VISIBLE);
-                listView.setVisibility(View.INVISIBLE);
-                searchView.setHint(String.format(getString(R.string.search_contanier), s));
             }
         });
     }
