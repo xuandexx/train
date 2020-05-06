@@ -8,10 +8,12 @@ import android.widget.TextView;
 
 import com.xuandexx.android.train.R;
 import com.xuandexx.android.train.model.Course;
+import com.xuandexx.android.train.util.xUtilsImageUtils;
 
 import java.util.List;
 
-public class CourseAdapter<Course> extends KSAdapter<Course> {
+public class CourseAdapter extends KSAdapter<Course> {
+
 
     public CourseAdapter(Context context, List<Course> list) {
         super(context, list);
@@ -19,24 +21,24 @@ public class CourseAdapter<Course> extends KSAdapter<Course> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder = null;
+        ViewHolder holder;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.item_course_detail, null);
             holder = new ViewHolder();
-            holder.cover =  convertView.findViewById(R.id.text);
-            holder.courseName =  convertView.findViewById(R.id.text);
-            holder.lessionNum =  convertView.findViewById(R.id.text);
-            holder.forks =  convertView.findViewById(R.id.text);
+            holder.cover = convertView.findViewById(R.id.cover);
+            holder.courseName = convertView.findViewById(R.id.courseName);
+            holder.lessionNum = convertView.findViewById(R.id.lessionNum);
+            holder.forks = convertView.findViewById(R.id.forks);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
         Course course = list.get(position);
         if (holder != null) {
-            holder.cover.setText(provinceBean.getName());
-            holder.courseName.setBackgroundResource(provinceBean.getColor());
-            holder.lessionNum.setBackgroundResource(provinceBean.getColor());
-            holder.forks.setBackgroundResource(provinceBean.getColor());
+            xUtilsImageUtils.display(holder.cover, course.getCover());
+            holder.courseName.setText(course.getCourseName());
+            holder.lessionNum.setText(course.getLessionNum());
+            holder.forks.setText(course.getForks());
         }
         return convertView;
     }

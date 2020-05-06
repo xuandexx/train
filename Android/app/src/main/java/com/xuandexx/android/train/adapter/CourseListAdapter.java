@@ -1,10 +1,8 @@
 package com.xuandexx.android.train.adapter;
 
 import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
@@ -17,18 +15,13 @@ import java.util.List;
 /**
  * 主页面中所有课程列表Adapter
  */
-public class CourseListAdapter extends BaseAdapter {
+public class CourseListAdapter extends KSAdapter<CourseCollection> {
 
-    private List<CourseCollection> list;
-    //布局加载器：将xml转为View对象RelativeLayout
-    private LayoutInflater mInflater;
     private Context context;
 
     public CourseListAdapter(Context context, List<CourseCollection> list) {
-        this.list = list;
-        //初始化布局加载器
+        super(context, list);
         this.context = context;
-        mInflater = LayoutInflater.from(context);
     }
 
     //配置显示的总item数量
@@ -53,7 +46,7 @@ public class CourseListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         //加载每个item的布局对象（将item_user_layout转为RelativeLayout对象）
-        View layout = mInflater.inflate(R.layout.item_course_collection, null);
+        View layout = inflater.inflate(R.layout.item_course_collection, null);
         //初始化布局中的元素
         TextView courseTitle = layout.findViewById(R.id.courseTitle);
         //获取数据显示内容(数据绑定，将数据显示到布局中)

@@ -13,9 +13,8 @@ public abstract class KSAdapter<T> extends BaseAdapter {
     public LayoutInflater inflater;//布局装载器对象
 
     // 通过构造方法将数据源与数据适配器关联起来
-    // context:要使用当前的Adapter的界面对象
     public KSAdapter(Context context, List<T> list) {
-        list = list;
+        this.list = list;
         inflater = LayoutInflater.from(context);
     }
 
