@@ -19,7 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="AA" />
+    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="AA">
+      <change afterPath="$PROJECT_DIR$/.idea/train-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/src/main/java/com/xuandexx/train/web/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train-web/src/test/java/com/xuandexx/train/web/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,13 +70,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/train-web/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -242,10 +254,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="920" y="403" key="NewModule_or_Project.wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587439925385" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1587536896187">
+    <state x="781" y="344" key="SettingsEditor" timestamp="1588151951558">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587536896187" />
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1588151951558" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587452517503">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

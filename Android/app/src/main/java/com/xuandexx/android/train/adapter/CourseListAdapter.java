@@ -15,7 +15,7 @@ import com.xuandexx.android.train.model.CourseCollection;
 import java.util.List;
 
 /**
- * 主页面Fragment中内容Adapter
+ * 主页面中所有课程列表Adapter
  */
 public class CourseListAdapter extends BaseAdapter {
 
