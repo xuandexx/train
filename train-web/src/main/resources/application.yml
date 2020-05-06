@@ -1,0 +1,72 @@
+#配置数据源的属性
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://47.110.38.195:3306/heyopet?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+      username: simon
+      password: 123456
+      max-active: 20
+      max-wait: 5000
+      initial-size: 1
+      filters: stat,log4j,wall
+      validationQuery: SELECT 'x' #验证连接
+      enable: true
+      #监控配置
+      stat-view-servlet:
+        enabled: true
+        #web-stat-filter:
+        login-username: root
+        login-password: 123456
+        allow: null
+        deny: null
+        url-pattern: /druid/*
+  #thymeleaf的配置
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    enabled: true
+  #        enabled: true
+  #        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  messages:
+    basename: i18n.login
+
+#aop:
+mybatis-plus:
+  #配置mybatisplus
+  global-config:
+    db-config:
+      id-type: auto
+    banner: true
+    #配置打印日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  ssl:
+    key-store: classpath:3317673_heyopet.com.pfx
+    key-store-password: S9qN122Y
+    keyStoreType: PKCS12
+  port: 443
+shiro:
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  hash-algorithm-name: md5
+  #shiro的配置
+  hash-iterations: 2
+  anon-urls:
+    - /index.html*
+    - /index*
+    - /*
+    - /back/*
+    - /login/login*
+    - /resources/**
+    - /favicon.ico
+    - /stage/favicon.ico
+    - /3317673_heyopet.com.pfx
+    - /robots.txt
+  login-url: /
+  log-out-url: /login/logout*
+  authc-ulrs:
+    - /**
