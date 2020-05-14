@@ -100,7 +100,7 @@ public class ContentFragment extends BaseFragment {
         for (int i = 0; i < 6; i++) {
             BannerItem tempItem = new BannerItem();
             tempItem.setAd(false);
-            tempItem.setImg("https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2235388275,3809603206&fm=85&app=79&f=JPG?w=121&h=75&s=8197C732C535FA313E526557030030BB");
+            tempItem.setImg("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3834366305,1376851846&fm=15&gp=0.jpg");
             tempItem.setLink("https://www.bilibili.com/");
             tempItem.setTitle("[示例数据]");
             list.add(tempItem);

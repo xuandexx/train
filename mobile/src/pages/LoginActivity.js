@@ -40,25 +40,13 @@ export default class LoginActivity extends Component {
                     <Image source={require('../image/login.png')} />
                 </View>
                 <View style={{ marginTop: 80 }}>
-                    <EditView name='输入用户名/注册手机号' onChangeText={(text) => {
+                    <EditView name='输入用户名' onChangeText={(text) => {
                         this.userName = text;
                     }} />
                     <EditView name='输入密码' onChangeText={(text) => {
                         this.password = text;
                     }} />
                     <LoginButton name='登录' onPressCallback={this.onPressCallback} />
-
-
-                    <View style={{
-                        flexDirection: 'row', height: 100, marginTop: 1,
-                        justifyContent: 'center',
-                    }}>
-                        <Icon name="qq" size={30} color="#52C0FE" />
-                        <FontAwesome style={{ fontSize: 32 }} icon={SolidIcons.smile} />
-                        <FontAwesome style={{ fontSize: 32 }} icon={BrandIcons.github} />
-                        <FontAwesome style={{ fontSize: 32 }} icon={BrandIcons.facebfaook} />
-                    </View>
-
                     <View style={{
                         flexDirection: 'row', height: 100, marginTop: 1,
                         justifyContent: 'center',
@@ -67,6 +55,16 @@ export default class LoginActivity extends Component {
                         <Text style={{ color: "#4A90E2", textAlign: 'center', marginTop: 10 }} >忘记密码？</Text>
                         <Text style={{ color: "#4A90E2", textAlign: 'center', marginTop: 10 }} > |  </Text>
                         <Text style={{ color: "#4A90E2", textAlign: 'center', marginTop: 10 }} >忘记密码？</Text>
+                    </View>
+                    <View style={{
+                        flexDirection: 'row', height: 100, marginTop: 1,
+                        justifyContent: 'center',
+                    }}>
+                         <Text style={{ textAlign: 'center', marginTop: 10 }} >其他登录方式 : </Text>
+                        <Icon name="qq" size={30} color="#52C0FE" />
+                        <FontAwesome style={{ fontSize: 32 }} icon={SolidIcons.smile} />
+                        <FontAwesome style={{ fontSize: 32 }} icon={BrandIcons.github} />
+                        <FontAwesome style={{ fontSize: 32 }} icon={BrandIcons.facebfaook} />
                     </View>
                 </View>
             </View>

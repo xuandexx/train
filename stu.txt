@@ -17,6 +17,7 @@
     ③ : cnpm install -g create-react-app
     ④ : create-react-app train-web 
     ⑤ : 安装yarn : npm install -g yarn
+    
 npm install -g npx
 yarn add react-router-dom
         
@@ -31,3 +32,18 @@ n . 错误集合 (windows开发环境用powerShell环境)
 
 安装antd
      npm install antd --save
+
+
+     cnpm install -g create-react-native-app
+cnpm install -g nrm 
+ nrm ls
+nrm use taobao
+
+创建React Native项目
+1.npx react-native init [project]
+2.cd [project]
+3.yarn android 或者 yarn react-native run-android
+
+
+
+

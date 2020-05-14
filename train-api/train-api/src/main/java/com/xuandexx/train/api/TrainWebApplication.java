@@ -1,5 +1,6 @@
-package com.xuandexx.train;
+package com.xuandexx.train.api;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,5 +12,4 @@ public class TrainWebApplication {
 		application.setBannerMode(Banner.Mode.OFF);
 		application.run(args);
 	}
-
 }

@@ -24,14 +24,7 @@
       <change afterPath="$PROJECT_DIR$/../mobile/src/pages/course/CourseMainPage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mobile/src/pages/course/CourseMainPage2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mobile/src/pages/course/jsons.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/TrainWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController (2).java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/model/BannerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/model/BannerItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/ContentFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/ContentFragment.java" afterDir="false" />
@@ -74,15 +67,30 @@
       <change beforePath="$PROJECT_DIR$/../mobile/src/pages/LoginActivity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/src/pages/LoginActivity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../stu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../stu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/train-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/train-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/TrainWebApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/controller/UserAccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ks-parent/ks-common/src/main/java/com/ksshop/util/HttpRequestGetAndPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/ks-parent/ks-common/src/main/java/com/ksshop/util/HttpRequestGetAndPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/TrainWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/TrainWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController (2).java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train-domain/src/main/java/com/xuandexx/train/domain/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +138,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\train\train-api\train-api" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xuandexx.train.web.controller" />
       <recent name="com.xuandexx.train.api.controller" />
@@ -245,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588042386615</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="AA">
+      <created>1589437963432</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589437963432</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,74 +285,98 @@
     <option name="LAST_COMMIT_MESSAGE" value="AA" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1162" y="561" key="#Notifications" timestamp="1589439710449">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1162" y="561" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1589439710449" />
     <state x="760" y="274" key="#Project_Structure" timestamp="1587451457808">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1587451457808" />
-    <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589437834352">
+    <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589438082485">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589437834352" />
-    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1587460043169">
+    <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589438082485" />
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1589441516003">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1587460043169" />
-    <state x="1009" y="488" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589437803144">
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1589441516003" />
+    <state x="1009" y="488" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589438075061">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1009" y="488" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589437803144" />
+    <state x="1009" y="488" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589438075061" />
+    <state x="878" y="266" key="CommitChangelistDialog2" timestamp="1589441863479">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="878" y="266" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1589441863479" />
     <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1589437065955">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589437065955" />
-    <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1589437785451">
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom" timestamp="1589439516038">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589437785451" />
-    <state width="2517" height="492" key="GridCell.Tab.0.center" timestamp="1589437785451">
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516038" />
+    <state width="1258" height="401" key="GridCell.Tab.0.center" timestamp="1589439516037">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589437785451" />
-    <state width="2517" height="492" key="GridCell.Tab.0.left" timestamp="1589437785451">
+    <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516037" />
+    <state width="1258" height="401" key="GridCell.Tab.0.left" timestamp="1589439516037">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589437785451" />
-    <state width="2517" height="492" key="GridCell.Tab.0.right" timestamp="1589437785451">
+    <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516037" />
+    <state width="1258" height="401" key="GridCell.Tab.0.right" timestamp="1589439516038">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589437785451" />
+    <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516038" />
+    <state width="1119" height="415" key="GridCell.Tab.1.bottom" timestamp="1589439508729">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1119" height="415" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589439508729" />
+    <state width="1119" height="415" key="GridCell.Tab.1.center" timestamp="1589439508729">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1119" height="415" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589439508729" />
+    <state width="1119" height="415" key="GridCell.Tab.1.left" timestamp="1589439508729">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1119" height="415" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589439508729" />
+    <state width="1119" height="415" key="GridCell.Tab.1.right" timestamp="1589439508729">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1119" height="415" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589439508729" />
     <state x="860" y="434" key="IDE.errors.dialog" timestamp="1587459155802">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="860" y="434" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587459155802" />
-    <state x="810" y="355" key="Maven.ArtifactSearchDialog" timestamp="1587977784644">
+    <state x="810" y="355" key="Maven.ArtifactSearchDialog" timestamp="1589441796555">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="810" y="355" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587977784644" />
+    <state x="810" y="355" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589441796555" />
     <state x="920" y="403" key="NewModule_or_Project.wizard" timestamp="1587439925385">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="920" y="403" key="NewModule_or_Project.wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587439925385" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1589437101315">
+    <state x="781" y="344" key="SettingsEditor" timestamp="1589439778581">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589437101315" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587452517503">
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589439778581" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1589437965205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1587452517503" />
-    <state x="1079" y="477" key="chooseDestDirectoryDialog" timestamp="1587451077967">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589437965205" />
+    <state x="1079" y="477" key="chooseDestDirectoryDialog" timestamp="1589439629030">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1079" y="477" key="chooseDestDirectoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587451077967" />
+    <state x="1079" y="477" key="chooseDestDirectoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589439629030" />
     <state x="1051" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587460462693">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587460462693" />
-    <state x="982" y="301" width="596" height="798" key="find.popup" timestamp="1587439804815">
+    <state x="982" y="301" width="596" height="798" key="find.popup" timestamp="1589439527841">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="982" y="301" width="596" height="798" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587439804815" />
+    <state x="982" y="301" width="596" height="798" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1589439527841" />
     <state x="654" y="360" key="new project wizard" timestamp="1587975327644">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

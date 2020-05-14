@@ -59,13 +59,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <Button
                 android:id="@+id/carlifeFargment_button1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:drawableTop="@drawable/piano_00"
                 android:text="栏目" />
 
@@ -75,6 +77,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:drawableTop="@drawable/piano_01"
                 android:gravity="center"
                 android:text="栏目" />
@@ -84,6 +87,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:drawableTop="@drawable/piano_02"
                 android:gravity="center"
                 android:text="栏目" />
@@ -93,6 +97,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:drawableTop="@drawable/piano_03"
                 android:gravity="center"
                 android:text="栏目" />

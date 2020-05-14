@@ -1,9 +1,9 @@
-package com.xuandexx.train.service.impl;
+package com.xuandexx.train.api.service.impl;
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.xuandexx.train.api.mapper.UserMapper;
+import com.xuandexx.train.api.service.IUserService;
 import com.xuandexx.train.domain.User;
-import com.xuandexx.train.mapper.UserMapper;
-import com.xuandexx.train.service.IUserService;
 import org.springframework.stereotype.Service;
 
 /**

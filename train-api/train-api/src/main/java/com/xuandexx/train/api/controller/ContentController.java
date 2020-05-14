@@ -1,11 +1,13 @@
 package com.xuandexx.train.api.controller;
 
-import com.ksshop.domain.KsResp;
+import com.ksshop.common.domian.KsResp;
 import com.xuandexx.train.api.bo.Advertise;
 import com.xuandexx.train.api.bo.Category;
 import com.xuandexx.train.api.bo.Course;
 import com.xuandexx.train.api.bo.Lesson;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;

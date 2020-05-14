@@ -1,7 +1,7 @@
 package com.xuandexx.train.api.controller;
 
-import com.ksshop.domain.KsResp;
-import com.xuandexx.train.api.bo.*;
+import com.ksshop.common.domian.KsResp;
+import com.xuandexx.train.api.bo.Broadcast;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

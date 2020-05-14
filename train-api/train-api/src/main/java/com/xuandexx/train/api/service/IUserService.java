@@ -1,6 +1,6 @@
-package com.xuandexx.train.service;
+package com.xuandexx.train.api.service;
 
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.xuandexx.train.domain.User;
 
 /**

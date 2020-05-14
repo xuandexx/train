@@ -1,6 +1,6 @@
 package com.xuandexx.train.api.controller;
 
-import com.ksshop.domain.KsResp;
+import com.ksshop.common.domian.KsResp;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
