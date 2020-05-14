@@ -19,78 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="AA">
-      <change afterPath="$PROJECT_DIR$/../mobile/src/pages/LoginActivity2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobile/src/pages/course/CourseMainPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobile/src/pages/course/CourseMainPage2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobile/src/pages/course/jsons.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/model/BannerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/model/BannerItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/ContentFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/java/com/xuandexx/android/train/ui/ContentFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/app/src/main/res/layout/fragment_content.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/generated/source/buildConfig/androidTest/debug/cn/jzvd/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/generated/source/buildConfig/androidTest/debug/cn/jzvd/test/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/generated/source/buildConfig/debug/cn/jzvd/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/generated/source/buildConfig/debug/cn/jzvd/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-es/values-es.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-es/values-es.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-ja-rJP/values-ja-rJP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-ja-rJP/values-ja-rJP.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-ko-rKR/values-ko-rKR.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-ko-rKR/values-ko-rKR.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-pt/values-pt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-pt/values-pt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-tr/values-tr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-tr/values-tr.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-zh/values-zh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values-zh/values-zh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-es/values-es.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-es/values-es.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-ja-rJP/values-ja-rJP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-ja-rJP/values-ja-rJP.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-ko-rKR/values-ko-rKR.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-ko-rKR/values-ko-rKR.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-pt/values-pt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-pt/values-pt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-tr/values-tr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-tr/values-tr.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-zh/values-zh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values-zh/values-zh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/jiaozivideoplayer/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/src/pages/LoginActivity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/src/pages/LoginActivity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../stu.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/train-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/train-api.iml" afterDir="false" />
+    <list default="true" id="3f50fb84-f71d-4896-8a4d-700b41c2c1e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ks-parent/ks-common/src/main/java/com/ksshop/util/HttpRequestGetAndPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/ks-parent/ks-common/src/main/java/com/ksshop/util/HttpRequestGetAndPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/TrainWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/TrainWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/ContentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController (2).java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/train-api/src/main/java/com/xuandexx/train/api/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../train-domain/src/main/java/com/xuandexx/train/domain/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +68,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -263,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589437963432</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="AA">
+      <created>1589441923810</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589441923810</updated>
+    </task>
+    <task id="LOCAL-00013" summary="AA">
+      <created>1589441974646</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589441974646</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,30 +249,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1009" y="488" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589438075061" />
-    <state x="878" y="266" key="CommitChangelistDialog2" timestamp="1589441863479">
+    <state x="878" y="266" key="CommitChangelistDialog2" timestamp="1589441974634">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="878" y="266" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1589441863479" />
+    <state x="878" y="266" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1589441974634" />
     <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1589437065955">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589437065955" />
-    <state width="1258" height="401" key="GridCell.Tab.0.bottom" timestamp="1589439516038">
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom" timestamp="1589442147297">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516038" />
-    <state width="1258" height="401" key="GridCell.Tab.0.center" timestamp="1589439516037">
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589442147297" />
+    <state width="1258" height="401" key="GridCell.Tab.0.center" timestamp="1589442147297">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516037" />
-    <state width="1258" height="401" key="GridCell.Tab.0.left" timestamp="1589439516037">
+    <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589442147297" />
+    <state width="1258" height="401" key="GridCell.Tab.0.left" timestamp="1589442147297">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516037" />
-    <state width="1258" height="401" key="GridCell.Tab.0.right" timestamp="1589439516038">
+    <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589442147297" />
+    <state width="1258" height="401" key="GridCell.Tab.0.right" timestamp="1589442147297">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589439516038" />
+    <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589442147297" />
     <state width="1119" height="415" key="GridCell.Tab.1.bottom" timestamp="1589439508729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -357,14 +301,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="920" y="403" key="NewModule_or_Project.wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1587439925385" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1589439778581">
+    <state x="781" y="344" key="SettingsEditor" timestamp="1589442277260">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589439778581" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1589437965205">
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589442277260" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1589441926896">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589437965205" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589441926896" />
     <state x="1079" y="477" key="chooseDestDirectoryDialog" timestamp="1589439629030">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
