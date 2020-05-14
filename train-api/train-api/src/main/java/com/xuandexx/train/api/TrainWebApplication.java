@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TrainWebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TrainWebApplication.class, args);
+		SpringApplication application = new SpringApplication(TrainWebApplication.class);
+		application.setBannerMode(Banner.Mode.OFF);
+		application.run(args);
 	}
 
 }
